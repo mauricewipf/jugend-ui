@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="frame2-fill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8E9C9"/>
+      <stop offset="100%" stop-color="#DEDFB0"/>
+    </linearGradient>
+  </defs>
+  <!-- Art Nouveau frame: 16-unit band (0–16 and 48–64), center 16–48 transparent for fill -->
+  <!-- Outer shape minus inner shape = frame band -->
+  <path fill="url(#frame2-fill)" fill-rule="evenodd" d="
+    M0 0 L64 0 L64 64 L0 64 Z
+    M16 16 L16 48 L48 48 L48 16 Z
+  "/>
+  <!-- Inner stroke (boundary of content area) -->
+  <rect x="16" y="16" width="32" height="32" fill="none" stroke="#C9CA9A" stroke-width="0.6" opacity="0.8"/>
+  <!-- Top-left corner: whiplash tendril -->
+  <path fill="none" stroke="#B8B994" stroke-width="0.7" stroke-linecap="round" d="M2 14 Q6 10 10 12 Q8 16 4 16"/>
+  <path fill="none" stroke="#B8B994" stroke-width="0.5" stroke-linecap="round" d="M8 6 Q12 4 14 8"/>
+  <!-- Top-right corner -->
+  <path fill="none" stroke="#B8B994" stroke-width="0.7" stroke-linecap="round" d="M62 14 Q58 10 54 12 Q56 16 60 16"/>
+  <path fill="none" stroke="#B8B994" stroke-width="0.5" stroke-linecap="round" d="M50 6 Q46 4 50 8"/>
+  <!-- Bottom-left corner: fuller flourish -->
+  <path fill="none" stroke="#B8B994" stroke-width="0.7" stroke-linecap="round" d="M2 50 Q6 54 4 58 Q8 60 12 58"/>
+  <path fill="none" stroke="#B8B994" stroke-width="0.5" stroke-linecap="round" d="M8 52 Q10 56 6 60"/>
+  <!-- Bottom-right corner -->
+  <path fill="none" stroke="#B8B994" stroke-width="0.7" stroke-linecap="round" d="M62 50 Q58 54 60 58 Q56 60 52 58"/>
+  <path fill="none" stroke="#B8B994" stroke-width="0.5" stroke-linecap="round" d="M56 52 Q54 56 58 60"/>
+  <!-- Top center: small scroll -->
+  <path fill="none" stroke="#B8B994" stroke-width="0.6" stroke-linecap="round" d="M30 4 Q32 2 34 4 Q32 6 30 4"/>
+  <!-- Bottom center: panel emphasis (slightly thicker band) -->
+  <path fill="#C9CA9A" fill-opacity="0.4" d="M20 56 L44 56 L44 60 L20 60 Z"/>
+</svg>

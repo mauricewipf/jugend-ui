@@ -64,12 +64,164 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
+import { Separator } from "@/components/ui/separator"
 import { Textarea } from "@/components/ui/textarea"
-import { PlusIcon, BluetoothIcon, MoreVerticalIcon, FileIcon, FolderIcon, FolderOpenIcon, FileCodeIcon, MoreHorizontalIcon, FolderSearchIcon, SaveIcon, DownloadIcon, EyeIcon, LayoutIcon, PaletteIcon, SunIcon, MoonIcon, MonitorIcon, UserIcon, CreditCardIcon, SettingsIcon, KeyboardIcon, LanguagesIcon, BellIcon, MailIcon, ShieldIcon, HelpCircleIcon, FileTextIcon, LogOutIcon } from "lucide-react"
+import { BellIcon, BluetoothIcon, CreditCardIcon, DownloadIcon, EyeIcon, FileCodeIcon, FileIcon, FileTextIcon, FolderIcon, FolderOpenIcon, FolderSearchIcon, HelpCircleIcon, KeyboardIcon, LanguagesIcon, LayoutIcon, LogOutIcon, MailIcon, MonitorIcon, MoonIcon, MoreHorizontalIcon, MoreVerticalIcon, PaletteIcon, PlusIcon, SaveIcon, SettingsIcon, ShieldIcon, SunIcon, UserIcon } from "lucide-react"
+
+function ButtonExample() {
+  const variants = [
+    "default",
+    "outline",
+    "secondary",
+    "ghost",
+    "destructive",
+    "link",
+    "outline_j",
+  ] as const
+  const sizes = ["xs", "sm", "default", "lg", "xl", "xxl"] as const
+  const iconSizes = ["icon-xs", "icon-sm", "icon", "icon-lg"] as const
+
+  return (
+    <Example title="Button" className="items-center justify-center">
+      <Card className="w-full max-w-2xl">
+        <CardHeader>
+          <CardTitle>Button variants</CardTitle>
+          <CardDescription>
+            All variant and size combinations for the Button component
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-8">
+          <div>
+            <h4 className="mb-3 text-sm font-medium text-muted-foreground">
+              Variants
+            </h4>
+            <div className="flex flex-wrap gap-2">
+              {variants.map((variant) => (
+                <Button key={variant} variant={variant}>
+                  {variant}
+                </Button>
+              ))}
+            </div>
+          </div>
+          <div>
+            <h4 className="mb-3 text-sm font-medium text-muted-foreground">
+              Sizes
+            </h4>
+            <div className="flex flex-wrap items-center gap-2">
+              {sizes.map((size) => (
+                <Button key={size} size={size}>
+                  {size}
+                </Button>
+              ))}
+            </div>
+          </div>
+          <div>
+            <h4 className="mb-3 text-sm font-medium text-muted-foreground">
+              Icon sizes
+            </h4>
+            <div className="flex flex-wrap items-center gap-2">
+              {iconSizes.map((size) => (
+                <Button key={size} variant="outline" size={size}>
+                  <PlusIcon />
+                  <span className="sr-only">{size}</span>
+                </Button>
+              ))}
+            </div>
+          </div>
+          <div>
+            <h4 className="mb-3 text-sm font-medium text-muted-foreground">
+              With icon
+            </h4>
+            <div className="flex flex-wrap gap-2">
+              <Button>
+                <PlusIcon data-icon="inline-start" />
+                Add item
+              </Button>
+              <Button variant="secondary">
+                Download
+                <DownloadIcon data-icon="inline-end" />
+              </Button>
+              <Button variant="ghost" size="icon">
+                <SettingsIcon />
+                <span className="sr-only">Settings</span>
+              </Button>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    </Example>
+  )
+}
+
+function SeparatorExample() {
+  return (
+    <Example title="Separator" className="items-center justify-center">
+      <Card className="w-full max-w-2xl">
+        <CardHeader>
+          <CardTitle>Separator</CardTitle>
+          <CardDescription>
+            Horizontal and vertical dividers for grouping content
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-8">
+          <div>
+            <h4 className="mb-3 text-sm font-medium text-muted-foreground">
+              Horizontal
+            </h4>
+            <div className="space-y-2">
+              <div>
+                <p className="text-sm">Section one</p>
+                <Separator className="my-2" />
+                <p className="text-sm">Section two</p>
+                <Separator className="my-2" />
+                <p className="text-sm">Section three</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h4 className="mb-3 text-sm font-medium text-muted-foreground">
+              Vertical
+            </h4>
+            <div className="flex h-8 items-center gap-2">
+              <span className="text-sm">Item 1</span>
+              <Separator orientation="vertical" />
+              <span className="text-sm">Item 2</span>
+              <Separator orientation="vertical" />
+              <span className="text-sm">Item 3</span>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    </Example>
+  )
+}
+
+function JugendButtonExample() {
+  return (
+    <Example title="Jugend Button" className="items-center justify-center">
+      <Card className="w-full max-w-2xl">
+        <CardHeader>
+          <CardTitle>Jugend Button</CardTitle>
+          <CardDescription>
+            outline_j variant, xxl size
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <Button variant="outline_j" size="xxl">
+            outline_j / xxl
+          </Button>
+        </CardContent>
+      </Card>
+    </Example>
+  )
+}
 
 export function ComponentExample() {
   return (
     <ExampleWrapper>
+      <JugendButtonExample />
+      <ButtonExample />
+      <SeparatorExample />
       <CardExample />
       <FormExample />
     </ExampleWrapper>
