@@ -216,9 +216,29 @@ function JugendButtonExample() {
   )
 }
 
-function JugendCardExample() {
+function JugendCardExampleShort() {
   return (
-    <Example title="Jugend Card" className="items-center justify-center">
+    <Example title="Jugend Card (Short)" className="items-center justify-center">
+      <Card variant="outline_j" className="w-full max-w-sm">
+        <CardHeader>
+          <CardTitle align="center">Art Nouveau</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p className="text-sm">A brief introduction.</p>
+        </CardContent>
+        <CardFooter>
+          <Button variant="outline" size="sm">
+            Action
+          </Button>
+        </CardFooter>
+      </Card>
+    </Example>
+  )
+}
+
+function JugendCardExampleMedium() {
+  return (
+    <Example title="Jugend Card (Medium)" className="items-center justify-center">
       <Card variant="outline_j" className="w-full max-w-sm">
         <CardHeader>
           <CardTitle align="center">Art Nouveau Card</CardTitle>
@@ -228,8 +248,8 @@ function JugendCardExample() {
         </CardHeader>
         <CardContent>
           <p className="text-sm">
-            This card uses the outline_j variant with a decorative SVG border frame,
-            perfect for elegant Jugendstil-inspired designs.
+            This card uses the outline_j variant with a decorative SVG border
+            frame, perfect for elegant Jugendstil-inspired designs.
           </p>
         </CardContent>
         <CardFooter>
@@ -242,11 +262,48 @@ function JugendCardExample() {
   )
 }
 
+function JugendCardExampleLong() {
+  return (
+    <Example title="Jugend Card (Long)" className="items-center justify-center">
+      <Card variant="outline_j" className="w-full max-w-sm">
+        <CardHeader>
+          <CardTitle align="center">A Treatise on Jugendstil Ornamentation</CardTitle>
+          <CardDescription>
+            An exploration of decorative motifs from the late nineteenth century
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <p className="text-sm">
+            The Jugendstil movement, flourishing across German-speaking Europe
+            between 1895 and 1910, embraced the sinuous curves and organic forms
+            of nature as a rebellion against the rigid academic styles of the
+            preceding era. Its practitioners drew inspiration from botanical
+            illustrations, Japanese prints, and the medieval crafts revival,
+            weaving these influences into a cohesive visual language. This card
+            uses the outline_j variant with a decorative SVG border frame, hand
+            crafted to evoke the whiplash tendrils and floral flourishes that
+            define the period. Each corner is embellished with delicate leaves
+            and serpentine vines, while the edges carry the characteristic
+            asymmetric rhythm so beloved by artists of the era.
+          </p>
+        </CardContent>
+        <CardFooter>
+          <Button variant="outline" size="sm">
+            Read more
+          </Button>
+        </CardFooter>
+      </Card>
+    </Example>
+  )
+}
+
 export function ComponentExample() {
   return (
     <ExampleWrapper>
       <JugendButtonExample />
-      <JugendCardExample />
+      <JugendCardExampleShort />
+      <JugendCardExampleMedium />
+      <JugendCardExampleLong />
       <ButtonExample />
       <SeparatorExample />
       <CardExample />
