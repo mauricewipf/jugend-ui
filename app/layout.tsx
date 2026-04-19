@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
+import "@fontsource/opendyslexic/400.css";
+import "@fontsource/opendyslexic/700.css";
+import "@fontsource/opendyslexic/400-italic.css";
+import "@fontsource/opendyslexic/700-italic.css";
 import "./globals.css";
 
 const inter = Inter({subsets:['latin'],variable:'--font-sans'});

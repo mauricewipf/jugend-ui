@@ -216,10 +216,37 @@ function JugendButtonExample() {
   )
 }
 
+function JugendCardExample() {
+  return (
+    <Example title="Jugend Card" className="items-center justify-center">
+      <Card variant="outline_j" className="w-full max-w-sm">
+        <CardHeader>
+          <CardTitle align="center">Art Nouveau Card</CardTitle>
+          <CardDescription>
+            Styled with the decorative card-frame-1.svg border
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <p className="text-sm">
+            This card uses the outline_j variant with a decorative SVG border frame,
+            perfect for elegant Jugendstil-inspired designs.
+          </p>
+        </CardContent>
+        <CardFooter>
+          <Button variant="outline" size="sm">
+            Action
+          </Button>
+        </CardFooter>
+      </Card>
+    </Example>
+  )
+}
+
 export function ComponentExample() {
   return (
     <ExampleWrapper>
       <JugendButtonExample />
+      <JugendCardExample />
       <ButtonExample />
       <SeparatorExample />
       <CardExample />
