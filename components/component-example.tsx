@@ -76,7 +76,7 @@ function ButtonExample() {
     "ghost",
     "destructive",
     "link",
-    "outline_j",
+    "autumn",
   ] as const
   const sizes = ["xs", "sm", "default", "lg", "xl", "xxl"] as const
   const iconSizes = ["icon-xs", "icon-sm", "icon", "icon-lg"] as const
@@ -203,12 +203,12 @@ function JugendButtonExample() {
         <CardHeader>
           <CardTitle>Jugend Button</CardTitle>
           <CardDescription>
-            outline_j variant, xxl size
+            autumn variant, xxl size
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <Button variant="outline_j" size="xxl">
-            outline_j / xxl
+          <Button variant="autumn" size="xxl">
+            autumn / xxl
           </Button>
         </CardContent>
       </Card>
@@ -219,7 +219,7 @@ function JugendButtonExample() {
 function JugendCardExampleShort() {
   return (
     <Example title="Jugend Card (Short)" className="items-center justify-center">
-      <Card variant="outline_j" className="w-full max-w-sm">
+      <Card variant="autumn" className="w-full max-w-sm">
         <CardHeader>
           <CardTitle align="center">Art Nouveau</CardTitle>
         </CardHeader>
@@ -239,7 +239,7 @@ function JugendCardExampleShort() {
 function JugendCardExampleMedium() {
   return (
     <Example title="Jugend Card (Medium)" className="items-center justify-center">
-      <Card variant="outline_j" className="w-full max-w-sm">
+      <Card variant="autumn" className="w-full max-w-sm">
         <CardHeader>
           <CardTitle align="center">Art Nouveau Card</CardTitle>
           <CardDescription>
@@ -248,7 +248,7 @@ function JugendCardExampleMedium() {
         </CardHeader>
         <CardContent>
           <p className="text-sm">
-            This card uses the outline_j variant with a decorative SVG border
+            This card uses the autumn variant with a decorative SVG border
             frame, perfect for elegant Jugendstil-inspired designs.
           </p>
         </CardContent>
@@ -265,7 +265,7 @@ function JugendCardExampleMedium() {
 function JugendCardExampleLong() {
   return (
     <Example title="Jugend Card (Long)" className="items-center justify-center">
-      <Card variant="outline_j" className="w-full max-w-sm">
+      <Card variant="autumn" className="w-full max-w-sm">
         <CardHeader>
           <CardTitle align="center">A Treatise on Jugendstil Ornamentation</CardTitle>
           <CardDescription>
@@ -280,7 +280,7 @@ function JugendCardExampleLong() {
             preceding era. Its practitioners drew inspiration from botanical
             illustrations, Japanese prints, and the medieval crafts revival,
             weaving these influences into a cohesive visual language. This card
-            uses the outline_j variant with a decorative SVG border frame, hand
+            uses the autumn variant with a decorative SVG border frame, hand
             crafted to evoke the whiplash tendrils and floral flourishes that
             define the period. Each corner is embellished with delicate leaves
             and serpentine vines, while the edges carry the characteristic
