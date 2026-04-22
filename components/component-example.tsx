@@ -207,7 +207,7 @@ function JugendButtonExample() {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <Button variant="autumn" size="xxl">
+          <Button variant="autumn" size="lg">
             autumn / xxl
           </Button>
         </CardContent>
@@ -227,7 +227,7 @@ function JugendCardExampleShort() {
           <p className="text-sm">A brief introduction.</p>
         </CardContent>
         <CardFooter>
-          <Button variant="outline" size="sm">
+          <Button variant="autumn" size="lg">
             Action
           </Button>
         </CardFooter>
@@ -253,7 +253,7 @@ function JugendCardExampleMedium() {
           </p>
         </CardContent>
         <CardFooter>
-          <Button variant="outline" size="sm">
+          <Button variant="autumn" size="lg">
             Action
           </Button>
         </CardFooter>
@@ -288,7 +288,7 @@ function JugendCardExampleLong() {
           </p>
         </CardContent>
         <CardFooter>
-          <Button variant="outline" size="sm">
+          <Button variant="autumn" size="lg">
             Read more
           </Button>
         </CardFooter>
