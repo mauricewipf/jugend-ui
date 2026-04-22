@@ -15,7 +15,7 @@ const buttonVariants = cva(
         ghost: "hover:bg-muted hover:text-foreground dark:hover:bg-muted/50 aria-expanded:bg-muted aria-expanded:text-foreground",
         destructive: "bg-destructive/10 hover:bg-destructive/20 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/20 text-destructive focus-visible:border-destructive/40 dark:hover:bg-destructive/30",
         link: "text-primary underline-offset-4 hover:underline",
-        autumn: "border-solid [border-image-repeat:stretch] border-4 [border-image-slice:16_fill] [border-image-source:url('/button-frame-autumn-1.svg')] bg-transparent hover:brightness-110 text-foreground",
+        autumn: "relative isolate overflow-visible border-0 before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:border-[20px] before:border-solid before:[border-image-repeat:stretch] before:[border-image-slice:calc(31/113*100%)_calc(31/180*100%)_fill] before:[border-image-source:url('/button-frame-autumn-1.svg')] bg-transparent hover:brightness-110 text-foreground rounded-none px-8!",
       },
       size: {
         default: "h-8 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2",
