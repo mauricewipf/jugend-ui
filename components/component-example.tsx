@@ -65,6 +65,7 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import { Separator } from "@/components/ui/separator"
+import { Skeleton } from "@/components/ui/skeleton"
 import { Textarea } from "@/components/ui/textarea"
 import { BellIcon, BluetoothIcon, CreditCardIcon, DownloadIcon, EyeIcon, FileCodeIcon, FileIcon, FileTextIcon, FolderIcon, FolderOpenIcon, FolderSearchIcon, HelpCircleIcon, KeyboardIcon, LanguagesIcon, LayoutIcon, LogOutIcon, MailIcon, MonitorIcon, MoonIcon, MoreHorizontalIcon, MoreVerticalIcon, PaletteIcon, PlusIcon, SaveIcon, SettingsIcon, ShieldIcon, SunIcon, UserIcon } from "lucide-react"
 
@@ -297,9 +298,63 @@ function JugendCardExampleLong() {
   )
 }
 
+function SkeletonExample() {
+  return (
+    <Example title="Skeleton" className="items-center justify-center">
+      <Card className="w-full max-w-2xl">
+        <CardHeader>
+          <CardTitle>Skeleton Loader</CardTitle>
+          <CardDescription>
+            Loading placeholders with standard and Art Nouveau variants
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-8">
+          <div>
+            <h4 className="mb-3 text-sm font-medium text-muted-foreground">
+              Standard Variants
+            </h4>
+            <div className="flex flex-col gap-3">
+              <Skeleton className="h-4 w-[250px]" />
+              <Skeleton className="h-4 w-[200px]" />
+              <Skeleton className="h-4 w-[180px]" />
+              <div className="flex gap-2">
+                <Skeleton variant="circle" className="h-12 w-12" />
+                <div className="flex flex-col gap-2">
+                  <Skeleton className="h-3 w-[100px]" />
+                  <Skeleton className="h-3 w-[80px]" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h4 className="mb-3 text-sm font-medium text-muted-foreground">
+              Jugendstil Variant
+            </h4>
+            <Skeleton
+              variant="outline_j"
+              className="w-full max-w-md"
+            >
+              <div className="space-y-3">
+                <Skeleton className="h-4 w-[80%]" />
+                <Skeleton className="h-3 w-[60%]" />
+                <Skeleton className="h-3 w-[70%]" />
+                <div className="flex gap-2 pt-2">
+                  <Skeleton variant="circle" className="h-8 w-8" />
+                  <Skeleton className="h-8 w-24" />
+                </div>
+              </div>
+            </Skeleton>
+          </div>
+        </CardContent>
+      </Card>
+    </Example>
+  )
+}
+
 export function ComponentExample() {
   return (
     <ExampleWrapper>
+      <SkeletonExample />
       <JugendButtonExample />
       <JugendCardExampleShort />
       <JugendCardExampleMedium />
