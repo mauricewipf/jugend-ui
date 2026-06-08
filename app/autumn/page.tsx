@@ -254,6 +254,22 @@ export default function AutumnPage() {
           </CardFooter>
         </Card>
 
+        <section className="space-y-4 px-2">
+          <p className="text-sm leading-relaxed text-muted-foreground">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <Separator variant="autumn" />
+          <p className="text-sm leading-relaxed text-muted-foreground">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+        </section>
+
         <Card variant="autumn" className="w-full">
           <CardHeader>
             <CardTitle align="center">Visitor registration</CardTitle>
