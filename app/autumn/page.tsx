@@ -145,7 +145,7 @@ export default function AutumnPage() {
           <Badge variant="secondary">Component Gallery</Badge>
           <Heading
             level={1}
-            variant="autumn"
+            variant="jugend"
             className="text-4xl font-medium tracking-tight"
           >
             Jugend UI Showcase
@@ -158,7 +158,7 @@ export default function AutumnPage() {
 
         <Card variant="autumn" className="w-full">
           <CardHeader>
-            <Heading level={3} variant="autumn" className="text-center text-2xl">
+            <Heading level={3} variant="jugend" className="text-center text-2xl">
               The Whiplash Line
             </Heading>
             <CardDescription className="text-center">
@@ -286,28 +286,28 @@ export default function AutumnPage() {
         <section className="space-y-4 px-2">
           <Heading
             level={2}
-            variant="autumn"
+            variant="jugend"
             className="text-center text-sm font-medium text-muted-foreground"
           >
             Heading
           </Heading>
           <div className="space-y-3">
-            <Heading level={1} variant="autumn" className="text-4xl">
+            <Heading level={1} variant="jugend" className="text-4xl">
               Heading 1
             </Heading>
-            <Heading level={2} variant="autumn" className="text-3xl">
+            <Heading level={2} variant="jugend" className="text-3xl">
               Heading 2
             </Heading>
-            <Heading level={3} variant="autumn" className="text-2xl">
+            <Heading level={3} variant="jugend" className="text-2xl">
               Heading 3
             </Heading>
-            <Heading level={4} variant="autumn" className="text-xl">
+            <Heading level={4} variant="jugend" className="text-xl">
               Heading 4
             </Heading>
-            <Heading level={5} variant="autumn" className="text-lg">
+            <Heading level={5} variant="jugend" className="text-lg">
               Heading 5
             </Heading>
-            <Heading level={6} variant="autumn" className="text-base">
+            <Heading level={6} variant="jugend" className="text-base">
               Heading 6
             </Heading>
           </div>
@@ -372,7 +372,7 @@ export default function AutumnPage() {
 
         <Card variant="autumn" className="w-full">
           <CardHeader>
-            <Heading level={3} variant="autumn" className="text-center text-2xl">
+            <Heading level={3} variant="jugend" className="text-center text-2xl">
               Visitor registration
             </Heading>
             <CardDescription className="text-center">
@@ -530,7 +530,7 @@ export default function AutumnPage() {
         <section className="space-y-4">
           <Heading
             level={2}
-            variant="autumn"
+            variant="jugend"
             className="text-center text-sm font-medium text-muted-foreground"
           >
             Separator

@@ -4,17 +4,17 @@ import * as React from "react"
 
 import { cn } from "@/lib/utils"
 
-import type { HeadingLevel } from "./heading-autumn"
+import type { HeadingLevel } from "./heading-jugend"
 
-const AutumnHeading = dynamic(() =>
-  import("./heading-autumn").then((mod) => ({ default: mod.AutumnHeading }))
+const JugendHeading = dynamic(() =>
+  import("./heading-jugend").then((mod) => ({ default: mod.JugendHeading }))
 )
 
 const headingVariants = cva("", {
   variants: {
     variant: {
       default: "",
-      autumn: "",
+      jugend: "",
     },
   },
   defaultVariants: {
@@ -42,9 +42,9 @@ function Heading({
   className,
   ...props
 }: HeadingProps) {
-  if (variant === "autumn") {
+  if (variant === "jugend") {
     return (
-      <AutumnHeading level={level} className={className} {...props} />
+      <JugendHeading level={level} className={className} {...props} />
     )
   }
 

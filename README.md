@@ -24,7 +24,7 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 ### Nouveau Nostalgia
 
-The `Heading` component's **autumn** variant uses [Nouveau Nostalgia](https://www.1001fonts.com/nouveau-nostalgia-font.html). The font is free for personal use but **not** free for commercial use. See the [license details](https://www.1001fonts.com/nouveau-nostalgia-font.html#license) before using it in production or client work.
+The `Heading` component's **jugend** variant uses [Nouveau Nostalgia](https://www.1001fonts.com/nouveau-nostalgia-font.html). The font is free for personal use but **not** free for commercial use. See the [license details](https://www.1001fonts.com/nouveau-nostalgia-font.html#license) before using it in production or client work.
 
 ## Learn More
 

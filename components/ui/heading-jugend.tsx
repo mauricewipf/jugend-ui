@@ -1,5 +1,5 @@
 /**
- * Autumn variant uses "Nouveau Nostalgia" font.
+ * Jugend variant uses "Nouveau Nostalgia" font.
  * License: Free for personal use, NOT free for commercial use.
  * https://www.1001fonts.com/nouveau-nostalgia-font.html#license
  */
@@ -19,22 +19,22 @@ const headingTags = {
   6: "h6",
 } as const satisfies Record<HeadingLevel, `h${HeadingLevel}`>
 
-type AutumnHeadingProps = {
+type JugendHeadingProps = {
   level: HeadingLevel
 } & React.ComponentPropsWithoutRef<"h1">
 
-function AutumnHeading({ level, className, ...props }: AutumnHeadingProps) {
+function JugendHeading({ level, className, ...props }: JugendHeadingProps) {
   const Tag = headingTags[level]
 
   return (
     <Tag
       data-slot="heading"
       data-level={level}
-      data-variant="autumn"
+      data-variant="jugend"
       className={cn(nouveauNostalgia.className, className)}
       {...props}
     />
   )
 }
 
-export { AutumnHeading, type AutumnHeadingProps, type HeadingLevel }
+export { JugendHeading, type JugendHeadingProps, type HeadingLevel }
