@@ -22,8 +22,8 @@ import {
   CardDescription,
   CardFooter,
   CardHeader,
-  CardTitle,
 } from "@/components/ui/card"
+import { Heading } from "@/components/ui/heading"
 import {
   Combobox,
   ComboboxContent,
@@ -143,10 +143,14 @@ export default function AutumnPage() {
       <div className="mx-auto flex w-full max-w-3xl flex-col gap-10">
         <header className="space-y-3 text-center">
           <Badge variant="secondary">Component Gallery</Badge>
-          <h1 className="text-3xl font-medium tracking-tight">
+          <Heading
+            level={1}
+            variant="autumn"
+            className="text-4xl font-medium tracking-tight"
+          >
             Jugend UI Showcase
-          </h1>
-          <p className="text-muted-foreground mx-auto max-w-xl text-sm leading-relaxed">
+          </Heading>
+          <p className="mx-auto max-w-xl text-sm leading-relaxed">
             A sample page demonstrating every UI component in this project,
             styled with the autumn Art Nouveau variants wherever available.
           </p>
@@ -154,7 +158,9 @@ export default function AutumnPage() {
 
         <Card variant="autumn" className="w-full">
           <CardHeader>
-            <CardTitle align="center">The Whiplash Line</CardTitle>
+            <Heading level={3} variant="autumn" className="text-center text-2xl">
+              The Whiplash Line
+            </Heading>
             <CardDescription className="text-center">
               Organic curves and botanical ornament from the Jugendstil era
             </CardDescription>
@@ -278,13 +284,43 @@ export default function AutumnPage() {
         </Card>
 
         <section className="space-y-4 px-2">
-          <p className="text-sm leading-relaxed text-muted-foreground">
+          <Heading
+            level={2}
+            variant="autumn"
+            className="text-center text-sm font-medium text-muted-foreground"
+          >
+            Heading
+          </Heading>
+          <div className="space-y-3">
+            <Heading level={1} variant="autumn" className="text-4xl">
+              Heading 1
+            </Heading>
+            <Heading level={2} variant="autumn" className="text-3xl">
+              Heading 2
+            </Heading>
+            <Heading level={3} variant="autumn" className="text-2xl">
+              Heading 3
+            </Heading>
+            <Heading level={4} variant="autumn" className="text-xl">
+              Heading 4
+            </Heading>
+            <Heading level={5} variant="autumn" className="text-lg">
+              Heading 5
+            </Heading>
+            <Heading level={6} variant="autumn" className="text-base">
+              Heading 6
+            </Heading>
+          </div>
+        </section>
+
+        <section className="space-y-4 px-2">
+          <p className="text-sm leading-relaxed">
             Between 1890 and 1910, architects across Europe turned everyday
             buildings into total works of art — facades, interiors, and railway
             halls alike.
           </p>
           <Separator variant="autumn" />
-          <p className="text-sm leading-relaxed text-muted-foreground">
+          <p className="text-sm leading-relaxed">
             Stone carvings, wrought iron, and painted woodwork carried the same
             whiplash curves from street facades into entrance halls and
             waiting rooms — ornament no longer confined to a single surface.
@@ -327,7 +363,7 @@ export default function AutumnPage() {
               </figcaption>
             </figure>
           </div>
-          <p className="text-sm leading-relaxed text-muted-foreground">
+          <p className="text-sm leading-relaxed">
             These photographs trace that impulse across scales — a single
             window bay, a domestic threshold, and a civic monument — each
             treating architecture as a canvas for organic line and craft.
@@ -336,7 +372,9 @@ export default function AutumnPage() {
 
         <Card variant="autumn" className="w-full">
           <CardHeader>
-            <CardTitle align="center">Visitor registration</CardTitle>
+            <Heading level={3} variant="autumn" className="text-center text-2xl">
+              Visitor registration
+            </Heading>
             <CardDescription className="text-center">
               Form fields built from Input, Select, Combobox, Textarea, and
               Field primitives
@@ -490,9 +528,13 @@ export default function AutumnPage() {
         </Card>
 
         <section className="space-y-4">
-          <h2 className="text-center text-sm font-medium text-muted-foreground">
+          <Heading
+            level={2}
+            variant="autumn"
+            className="text-center text-sm font-medium text-muted-foreground"
+          >
             Separator
-          </h2>
+          </Heading>
           <div className="flex h-8 items-center justify-center gap-3">
             <span className="text-sm">Gallery</span>
             <Separator orientation="vertical" />

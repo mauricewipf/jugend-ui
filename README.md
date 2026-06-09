@@ -20,6 +20,12 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Fonts
+
+### Nouveau Nostalgia
+
+The `Heading` component's **autumn** variant uses [Nouveau Nostalgia](https://www.1001fonts.com/nouveau-nostalgia-font.html). The font is free for personal use but **not** free for commercial use. See the [license details](https://www.1001fonts.com/nouveau-nostalgia-font.html#license) before using it in production or client work.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
