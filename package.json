@@ -1,13 +1,31 @@
 {
   "name": "jugend-ui",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "description": "Art Nouveau / Jugendstil UI components built on shadcn/ui. Copy-paste seasonal themes with decorative SVG frames.",
+  "author": "Maurice Wipf",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mauricewipf/jugend-ui.git"
+  },
+  "homepage": "https://github.com/mauricewipf/jugend-ui",
+  "keywords": [
+    "art-nouveau",
+    "jugendstil",
+    "shadcn-ui",
+    "tailwindcss",
+    "nextjs",
+    "design-system",
+    "ui-components"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "generate-svg": "bun scripts/generate-svg.ts"
+    "generate-svg": "bun scripts/generate-svg.ts",
+    "registry:build": "shadcn build"
   },
   "dependencies": {
     "@base-ui/react": "^1.1.0",

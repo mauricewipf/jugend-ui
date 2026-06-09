@@ -1,0 +1,86 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "jugend-ui",
+  "homepage": "https://github.com/mauricewipf/jugend-ui",
+  "items": [
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "title": "Button",
+      "description": "Art Nouveau autumn button with decorative SVG border-image frame.",
+      "files": [
+        {
+          "path": "components/ui/button.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "card",
+      "type": "registry:ui",
+      "title": "Card",
+      "description": "Art Nouveau autumn card with decorative SVG border-image frame.",
+      "files": [
+        {
+          "path": "components/ui/card.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "skeleton",
+      "type": "registry:ui",
+      "title": "Skeleton",
+      "description": "Art Nouveau autumn skeleton placeholder with decorative frame.",
+      "files": [
+        {
+          "path": "components/ui/skeleton.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "separator",
+      "type": "registry:ui",
+      "title": "Separator",
+      "description": "Art Nouveau autumn separator with decorative SVG frame.",
+      "dependencies": ["radix-ui"],
+      "files": [
+        {
+          "path": "components/ui/separator.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heading-jugend",
+      "type": "registry:ui",
+      "title": "Heading (Jugend)",
+      "description": "Jugendstil heading using the Ambrosia OFL display font.",
+      "files": [
+        {
+          "path": "components/ui/heading-jugend.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/heading.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "lib/fonts/ambrosia.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "assets/fonts/ambrosia/ambrosia-medium.otf",
+          "type": "registry:file",
+          "target": "~/assets/fonts/ambrosia/ambrosia-medium.otf"
+        },
+        {
+          "path": "assets/fonts/ambrosia/OFL.txt",
+          "type": "registry:file",
+          "target": "~/assets/fonts/ambrosia/OFL.txt"
+        }
+      ]
+    }
+  ]
+}

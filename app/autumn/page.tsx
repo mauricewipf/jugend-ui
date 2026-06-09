@@ -104,17 +104,17 @@ import artNouveauInteriorArch from "./images/art-nouveau-interior-arch.jpg"
 const exhibits = [
   {
     src: artNouveauBalcony,
-    alt: "Art Nouveau balcony with ornate wrought-iron railing and sculpted window surround",
+    alt: "Art Nouveau building facade with ornate architectural details and balcony in Zagreb",
     caption: "Facade ornament",
   },
   {
     src: artNouveauInteriorArch,
-    alt: "Light-green Art Nouveau archway with clock and sculpted female head",
+    alt: "Prague Art Nouveau doorway with clock, carved ornament, and decorative arch",
     caption: "Interior portal",
   },
   {
     src: antwerpCentralStation,
-    alt: "Grand hall of Antwerp Central Station with stone archways and glass ceiling",
+    alt: "Antwerp Central Station interior with stone arch, clock, and glass ceiling",
     caption: "Antwerp Central",
   },
 ] as const

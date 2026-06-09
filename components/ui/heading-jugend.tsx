@@ -1,11 +1,11 @@
 /**
- * Jugend variant uses "Nouveau Nostalgia" font.
- * License: Free for personal use, NOT free for commercial use.
- * https://www.1001fonts.com/nouveau-nostalgia-font.html#license
+ * Jugend variant uses Ambrosia font.
+ * License: OFL (SIL Open Font License)
+ * https://fontlibrary.org/en/font/ambrosia
  */
 import * as React from "react"
 
-import { nouveauNostalgia } from "@/lib/fonts/nouveau-nostalgia"
+import { ambrosia } from "@/lib/fonts/ambrosia"
 import { cn } from "@/lib/utils"
 
 type HeadingLevel = 1 | 2 | 3 | 4 | 5 | 6
@@ -31,7 +31,7 @@ function JugendHeading({ level, className, ...props }: JugendHeadingProps) {
       data-slot="heading"
       data-level={level}
       data-variant="jugend"
-      className={cn(nouveauNostalgia.className, className)}
+      className={cn(ambrosia.className, "tracking-wide", className)}
       {...props}
     />
   )
