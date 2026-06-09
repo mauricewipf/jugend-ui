@@ -6,6 +6,9 @@
         "shadcn@latest",
         "mcp"
       ]
+    },
+    "quiverai": {
+      "url": "https://app.quiver.ai/mcp"
     }
   }
 }
