@@ -274,7 +274,7 @@ export default function AutumnPage() {
                 </AlertDialogHeader>
                 <AlertDialogFooter>
                   <AlertDialogCancel>Not now</AlertDialogCancel>
-                  <AlertDialogAction variant="autumn">
+                  <AlertDialogAction variant="default">
                     Send catalogue
                   </AlertDialogAction>
                 </AlertDialogFooter>
@@ -380,11 +380,8 @@ export default function AutumnPage() {
               Field primitives
             </CardDescription>
           </CardHeader>
-          <CardContent>
-            <form
-              onSubmit={(event) => event.preventDefault()}
-              className="space-y-6"
-            >
+          <form onSubmit={(event) => event.preventDefault()}>
+            <CardContent className="space-y-6">
               <FieldSet>
                 <FieldLegend>Personal details</FieldLegend>
                 <FieldDescription>
@@ -505,7 +502,7 @@ export default function AutumnPage() {
                         placeholder="Write a short note…"
                       />
                       <InputGroupAddon align="block-end">
-                        <InputGroupButton variant="autumn">
+                        <InputGroupButton variant="default">
                           <SendIcon />
                           Send
                         </InputGroupButton>
@@ -513,18 +510,18 @@ export default function AutumnPage() {
                     </InputGroup>
                   </Field>
 
-                  <Field orientation="horizontal">
-                    <Button variant="autumn" type="submit">
-                      Register visit
-                    </Button>
-                    <Button variant="outline" type="reset">
-                      Clear form
-                    </Button>
-                  </Field>
                 </FieldGroup>
               </FieldSet>
-            </form>
-          </CardContent>
+            </CardContent>
+            <CardFooter className="gap-2">
+              <Button variant="autumn" size="lg" type="submit">
+                Register visit
+              </Button>
+              <Button variant="outline" type="reset">
+                Clear form
+              </Button>
+            </CardFooter>
+          </form>
         </Card>
 
         <section className="space-y-4">
