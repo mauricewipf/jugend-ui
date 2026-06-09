@@ -82,6 +82,7 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import { Separator } from "@/components/ui/separator"
+import { Skeleton } from "@/components/ui/skeleton"
 import { Textarea } from "@/components/ui/textarea"
 import {
   BellIcon,
@@ -95,6 +96,28 @@ import {
   SparklesIcon,
   SunIcon,
 } from "lucide-react"
+
+import antwerpCentralStation from "./images/antwerp-central-station.jpg"
+import artNouveauBalcony from "./images/art-nouveau-balcony.jpg"
+import artNouveauInteriorArch from "./images/art-nouveau-interior-arch.jpg"
+
+const exhibits = [
+  {
+    src: artNouveauBalcony,
+    alt: "Art Nouveau balcony with ornate wrought-iron railing and sculpted window surround",
+    caption: "Facade ornament",
+  },
+  {
+    src: artNouveauInteriorArch,
+    alt: "Light-green Art Nouveau archway with clock and sculpted female head",
+    caption: "Interior portal",
+  },
+  {
+    src: antwerpCentralStation,
+    alt: "Grand hall of Antwerp Central Station with stone archways and glass ceiling",
+    caption: "Antwerp Central",
+  },
+] as const
 
 const movements = [
   "Jugendstil",
@@ -256,17 +279,58 @@ export default function AutumnPage() {
 
         <section className="space-y-4 px-2">
           <p className="text-sm leading-relaxed text-muted-foreground">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Between 1890 and 1910, architects across Europe turned everyday
+            buildings into total works of art — facades, interiors, and railway
+            halls alike.
           </p>
           <Separator variant="autumn" />
           <p className="text-sm leading-relaxed text-muted-foreground">
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
+            Stone carvings, wrought iron, and painted woodwork carried the same
+            whiplash curves from street facades into entrance halls and
+            waiting rooms — ornament no longer confined to a single surface.
+          </p>
+          <div className="grid gap-4 sm:grid-cols-3">
+            {exhibits.map((exhibit) => (
+              <figure key={exhibit.caption} className="space-y-2">
+                <img
+                  src={exhibit.src.src}
+                  alt={exhibit.alt}
+                  width={exhibit.src.width}
+                  height={exhibit.src.height}
+                  className="aspect-[2/3] w-full rounded-sm object-cover"
+                />
+                <figcaption className="text-center text-xs text-muted-foreground">
+                  {exhibit.caption}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+          <div className="grid gap-4 sm:grid-cols-3">
+            {exhibits.slice(0, 2).map((exhibit) => (
+              <figure key={`${exhibit.caption}-repeat`} className="space-y-2">
+                <img
+                  src={exhibit.src.src}
+                  alt={exhibit.alt}
+                  width={exhibit.src.width}
+                  height={exhibit.src.height}
+                  className="aspect-[2/3] w-full rounded-sm object-cover"
+                />
+                <figcaption className="text-center text-xs text-muted-foreground">
+                  {exhibit.caption}
+                </figcaption>
+              </figure>
+            ))}
+            <figure className="space-y-2">
+              <Skeleton variant="autumn" className="aspect-[2/3] w-full" />
+              <figcaption className="text-center text-xs text-muted-foreground">
+                Skeleton
+              </figcaption>
+            </figure>
+          </div>
+          <p className="text-sm leading-relaxed text-muted-foreground">
+            These photographs trace that impulse across scales — a single
+            window bay, a domestic threshold, and a civic monument — each
+            treating architecture as a canvas for organic line and craft.
           </p>
         </section>
 

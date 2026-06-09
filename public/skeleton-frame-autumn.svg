@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141 211">
+  <!-- Placeholder frame  replace with final autumn skeleton SVG -->
+  <style type="text/css">
+    .frame-fill { fill: #FBF3E3; }
+    .frame-stroke { fill: none; stroke: #473418; stroke-width: 1.2; }
+    .frame-accent { fill: #AE8746; stroke: #684F28; stroke-width: 0.5; }
+    .frame-muted { fill: #E8DCC8; }
+  </style>
+  <rect class="frame-muted" width="141" height="211"/>
+  <rect class="frame-stroke" x="6" y="6" width="129" height="199"/>
+  <rect class="frame-stroke" x="22" y="22" width="97" height="167"/>
+  <path class="frame-accent" d="M22 22h18v8H22zm81 0h18v8h-18zM22 181h18v8H22zm81 0h18v8h-18z"/>
+  <path class="frame-accent" d="M22 22v18h8V22zm0 149v18h8v-18zm91-167v18h8V22zm0 149v18h8v-18z"/>
+  <path class="frame-accent" d="M10 10c4-2 8-2 12 0M119 10c4 2 8 2 12 0M10 201c4 2 8 2 12 0M119 201c4-2 8-2 12 0"/>
+  <path class="frame-fill" d="M30 30h81v151H30z"/>
+</svg>
