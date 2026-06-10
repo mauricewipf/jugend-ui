@@ -236,6 +236,29 @@ export default function WinterPage() {
           </p>
         </section>
 
+        <section className="grid items-center gap-8 px-2 sm:grid-cols-2">
+          <div className="space-y-4">
+            <p className="text-sm leading-relaxed">
+              Antoni Gaudí pushed the style toward the fantastical in Barcelona,
+              from the undulating façade of Casa Batlló to the still-unfinished
+              Sagrada Família. In Glasgow, Charles Rennie Mackintosh distilled
+              floral geometry into crisp, modern lines at the Glasgow School of
+              Art, while Otto Wagner and Josef Hoffmann shaped the Viennese
+              Secession with rational grids softened by gilded ornament.
+            </p>
+          </div>
+          <Card
+            variant="winter-teaser"
+            className="w-full max-w-xs justify-self-center sm:justify-self-end"
+          >
+            <CardHeader>
+              <Heading level={3} variant="jugend" className="text-3xl">
+                Enchanting Organic Harmony
+              </Heading>
+            </CardHeader>
+          </Card>
+        </section>
+
         <Card variant="winter" className="w-full">
           <CardHeader>
             <Heading level={3} variant="jugend" className="text-center text-3xl">

@@ -246,14 +246,6 @@ export default function AutumnPage() {
               signature cast-iron entrances — whiplash curves made civic
               infrastructure feel ornamental.
             </p>
-            <p className="text-sm leading-relaxed">
-              Antoni Gaudí pushed the style toward the fantastical in Barcelona,
-              from the undulating façade of Casa Batlló to the still-unfinished
-              Sagrada Família. In Glasgow, Charles Rennie Mackintosh distilled
-              floral geometry into crisp, modern lines at the Glasgow School of
-              Art, while Otto Wagner and Josef Hoffmann shaped the Viennese
-              Secession with rational grids softened by gilded ornament.
-            </p>
           </div>
           <Card
             variant="autumn-teaser"

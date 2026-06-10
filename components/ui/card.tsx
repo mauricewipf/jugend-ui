@@ -12,6 +12,7 @@ const cardVariants = cva(
         autumn: "relative isolate overflow-visible border-0 [&>*]:relative [&>*]:z-10 before:pointer-events-none before:absolute before:inset-0 before:z-0 before:border-[88px] before:border-solid before:[border-image-repeat:round_stretch] before:[border-image-slice:calc(50/209*100%)_calc(56/141*100%)_fill] before:[border-image-source:url('/autumn/card-frame.svg')] bg-transparent ring-0 rounded-none px-12 pt-10 pb-8 has-data-[slot=card-footer]:pb-8",
         winter: "relative isolate overflow-visible border-0 [&>*]:relative [&>*]:z-10 before:pointer-events-none before:absolute before:inset-0 before:z-0 before:border-[88px] before:border-solid before:[border-image-repeat:round_stretch] before:[border-image-slice:calc(50/209*100%)_calc(56/141*100%)_fill] before:[border-image-source:url('/winter/card-frame.svg')] bg-transparent ring-0 rounded-none px-12 pt-10 pb-8 has-data-[slot=card-footer]:pb-8",
         "autumn-teaser": "relative isolate border-0 bg-transparent ring-0 rounded-none aspect-[150/218] bg-[url('/autumn/card-teaser.svg')] bg-contain bg-center bg-no-repeat justify-center gap-0 py-0 pl-[12%] pr-[27%]",
+        "winter-teaser": "relative isolate border-0 bg-transparent ring-0 rounded-none aspect-[150/218] bg-[url('/winter/card-teaser.svg')] bg-contain bg-center bg-no-repeat justify-center gap-0 py-0 pl-[12%] pr-[27%]",
       },
       size: {
         default: "",
@@ -47,7 +48,7 @@ function CardHeader({ className, ...props }: React.ComponentProps<"div">) {
     <div
       data-slot="card-header"
       className={cn(
-        "gap-1 rounded-t-xl px-4 group-data-[size=sm]/card:px-3 [.border-b]:pb-4 group-data-[size=sm]/card:[.border-b]:pb-3 group/card-header @container/card-header grid auto-rows-min items-start has-data-[slot=card-action]:grid-cols-[1fr_auto] has-data-[slot=card-description]:grid-rows-[auto_auto] group-data-[variant=autumn]/card:rounded-none group-data-[variant=autumn]/card:pt-0 group-data-[variant=winter]/card:rounded-none group-data-[variant=winter]/card:pt-0 group-data-[variant=autumn-teaser]/card:rounded-none group-data-[variant=autumn-teaser]/card:p-0",
+        "gap-1 rounded-t-xl px-4 group-data-[size=sm]/card:px-3 [.border-b]:pb-4 group-data-[size=sm]/card:[.border-b]:pb-3 group/card-header @container/card-header grid auto-rows-min items-start has-data-[slot=card-action]:grid-cols-[1fr_auto] has-data-[slot=card-description]:grid-rows-[auto_auto] group-data-[variant=autumn]/card:rounded-none group-data-[variant=autumn]/card:pt-0 group-data-[variant=winter]/card:rounded-none group-data-[variant=winter]/card:pt-0 group-data-[variant=autumn-teaser]/card:rounded-none group-data-[variant=autumn-teaser]/card:p-0 group-data-[variant=winter-teaser]/card:rounded-none group-data-[variant=winter-teaser]/card:p-0",
         className
       )}
       {...props}
