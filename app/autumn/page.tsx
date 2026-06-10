@@ -239,16 +239,20 @@ export default function AutumnPage() {
         <section className="grid items-center gap-8 px-2 sm:grid-cols-2">
           <div className="space-y-4">
             <p className="text-sm leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              Art Nouveau architecture turned buildings into total works of art.
+              In Brussels, Victor Horta wove iron, glass, and light through
+              houses such as the Hôtel Tassel and Hôtel Solvay, where staircases
+              unfurl like vines. In Paris, Hector Guimard gave the Métro its
+              signature cast-iron entrances — whiplash curves made civic
+              infrastructure feel ornamental.
             </p>
             <p className="text-sm leading-relaxed">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.
+              Antoni Gaudí pushed the style toward the fantastical in Barcelona,
+              from the undulating façade of Casa Batlló to the still-unfinished
+              Sagrada Família. In Glasgow, Charles Rennie Mackintosh distilled
+              floral geometry into crisp, modern lines at the Glasgow School of
+              Art, while Otto Wagner and Josef Hoffmann shaped the Viennese
+              Secession with rational grids softened by gilded ornament.
             </p>
           </div>
           <Card
