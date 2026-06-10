@@ -56,13 +56,16 @@ export default function Page() {
           Jugend UI
         </Heading>
         <p className="text-muted-foreground text-sm leading-relaxed">
-          Art Nouveau / Jugendstil UI components. Free. Open Source.{" "}
-          <Link
+          Art Nouveau / Jugendstil UI components.
+        </p>
+        <p className="text-muted-foreground text-sm leading-relaxed">
+          Free. Open Source.{" "}
+          <a
+            className="text-foreground font-medium underline-offset-4 hover:underline"
             href="https://github.com/mauricewipf/jugend-ui"
-            className="font-medium underline-offset-4 hover:underline"
           >
-            View on GitHub
-          </Link>
+            View on GitHub →
+          </a>
         </p>
       </header>
 
