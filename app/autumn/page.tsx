@@ -1,6 +1,5 @@
 "use client"
 
-import * as React from "react"
 import {
   AlertDialog,
   AlertDialogAction,
@@ -17,7 +16,6 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import {
   Card,
-  CardAction,
   CardContent,
   CardDescription,
   CardFooter,
@@ -32,23 +30,6 @@ import {
   ComboboxItem,
   ComboboxList,
 } from "@/components/ui/combobox"
-import {
-  DropdownMenu,
-  DropdownMenuCheckboxItem,
-  DropdownMenuContent,
-  DropdownMenuGroup,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuPortal,
-  DropdownMenuRadioGroup,
-  DropdownMenuRadioItem,
-  DropdownMenuSeparator,
-  DropdownMenuShortcut,
-  DropdownMenuSub,
-  DropdownMenuSubContent,
-  DropdownMenuSubTrigger,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
 import {
   Field,
   FieldContent,
@@ -88,13 +69,8 @@ import {
   BellIcon,
   BookmarkIcon,
   LeafIcon,
-  MailIcon,
-  MoonIcon,
-  PaletteIcon,
   SearchIcon,
   SendIcon,
-  SparklesIcon,
-  SunIcon,
 } from "lucide-react"
 
 import antwerpCentralStation from "./images/antwerp-central-station.jpg"
@@ -141,9 +117,6 @@ const mediums = [
 ] as const
 
 export default function AutumnPage() {
-  const [newsletter, setNewsletter] = React.useState(true)
-  const [palette, setPalette] = React.useState("earth")
-
   return (
     <main className="min-h-screen bg-background px-4 py-12">
       <div className="mx-auto flex w-full max-w-3xl flex-col gap-10">
@@ -170,69 +143,6 @@ export default function AutumnPage() {
             <CardDescription className="text-center">
               Organic curves and botanical ornament from the Jugendstil era
             </CardDescription>
-            <CardAction>
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <Button variant="ghost" size="icon-sm">
-                    <PaletteIcon />
-                    <span className="sr-only">Open menu</span>
-                  </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent align="end" className="w-52">
-                  <DropdownMenuGroup>
-                    <DropdownMenuLabel>Palette</DropdownMenuLabel>
-                    <DropdownMenuRadioGroup
-                      value={palette}
-                      onValueChange={setPalette}
-                    >
-                      <DropdownMenuRadioItem value="earth">
-                        <LeafIcon />
-                        Earth tones
-                      </DropdownMenuRadioItem>
-                      <DropdownMenuRadioItem value="gold">
-                        <SparklesIcon />
-                        Gilded accents
-                      </DropdownMenuRadioItem>
-                      <DropdownMenuRadioItem value="ink">
-                        <MoonIcon />
-                        Ink &amp; charcoal
-                      </DropdownMenuRadioItem>
-                    </DropdownMenuRadioGroup>
-                  </DropdownMenuGroup>
-                  <DropdownMenuSeparator />
-                  <DropdownMenuGroup>
-                    <DropdownMenuLabel>Preferences</DropdownMenuLabel>
-                    <DropdownMenuCheckboxItem
-                      checked={newsletter}
-                      onCheckedChange={(checked) =>
-                        setNewsletter(checked === true)
-                      }
-                    >
-                      <MailIcon />
-                      Newsletter
-                    </DropdownMenuCheckboxItem>
-                    <DropdownMenuSub>
-                      <DropdownMenuSubTrigger>
-                        <SunIcon />
-                        More themes
-                      </DropdownMenuSubTrigger>
-                      <DropdownMenuPortal>
-                        <DropdownMenuSubContent>
-                          <DropdownMenuItem>
-                            Vienna Secession
-                            <DropdownMenuShortcut>⌘1</DropdownMenuShortcut>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem>
-                            Glasgow School
-                            <DropdownMenuShortcut>⌘2</DropdownMenuShortcut>
-                          </DropdownMenuItem>
-                        </DropdownMenuSubContent>
-                      </DropdownMenuPortal>
-                    </DropdownMenuSub>
-                  </DropdownMenuGroup>
-                </DropdownMenuContent>
-              </DropdownMenu>
-            </CardAction>
           </CardHeader>
           <CardContent className="space-y-4">
             <p className="text-sm leading-relaxed">
