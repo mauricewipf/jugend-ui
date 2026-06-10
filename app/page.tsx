@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/card"
 import { Heading } from "@/components/ui/heading"
 import { getSiteUrl } from "@/lib/site-url"
+import registry from "@/registry.json"
 
 const seasons = [
   {
@@ -40,7 +41,6 @@ const seasons = [
 
 export default function Page() {
   const siteUrl = getSiteUrl()
-  const installCommand = `bunx shadcn@latest add ${siteUrl}/r/button.json`
   const usageCode = `import { Button } from "@/components/ui/button";
 
 <Button variant="autumn">Button</Button>;`
@@ -104,9 +104,18 @@ export default function Page() {
       </nav>
 
       <section className="space-y-8">
-        <div className="space-y-3">
+        <div className="space-y-6">
           <h2 className="text-lg font-medium">Installation</h2>
-          <CodeBlock code={installCommand} />
+          <ul className="space-y-6">
+            {registry.items.map((item) => (
+              <li key={item.name} className="space-y-3">
+                <h3 className="font-medium">{item.title}</h3>
+                <CodeBlock
+                  code={`bunx shadcn@latest add ${siteUrl}/r/${item.name}.json`}
+                />
+              </li>
+            ))}
+          </ul>
         </div>
 
         <div className="space-y-3">
