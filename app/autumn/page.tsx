@@ -236,6 +236,33 @@ export default function AutumnPage() {
           </p>
         </section>
 
+        <section className="grid items-center gap-8 px-2 sm:grid-cols-2">
+          <div className="space-y-4">
+            <p className="text-sm leading-relaxed">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p className="text-sm leading-relaxed">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum.
+            </p>
+          </div>
+          <Card
+            variant="autumn-teaser"
+            className="w-full max-w-xs justify-self-center sm:justify-self-end"
+          >
+            <CardHeader>
+              <Heading level={3} variant="jugend" className="text-3xl">
+                Enchanting Organic Harmony
+              </Heading>
+            </CardHeader>
+          </Card>
+        </section>
+
         <Card variant="autumn" className="w-full">
           <CardHeader>
             <Heading level={3} variant="jugend" className="text-center text-3xl">
