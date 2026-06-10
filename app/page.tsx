@@ -11,11 +11,13 @@ const seasons = [
     name: "Spring",
     href: "/spring",
     variant: "spring-teaser" as const,
+    comingSoon: true,
   },
   {
     name: "Summer",
     href: "/summer",
     variant: "summer-teaser" as const,
+    comingSoon: true,
   },
   {
     name: "Autumn",
@@ -83,6 +85,9 @@ export default function Page() {
                 <CardHeader>
                   <Heading level={3} variant="jugend" className="text-3xl">
                     {season.name}
+                    {"comingSoon" in season && season.comingSoon
+                      ? " (Coming Soon)"
+                      : null}
                   </Heading>
                 </CardHeader>
               </Card>
