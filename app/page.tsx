@@ -28,14 +28,12 @@ const seasons = [
   {
     name: "Autumn",
     href: "/autumn",
-    status: "live" as const,
-    image: "https://placehold.co/640x360/fdba74/7c2d12?text=Autumn",
+    variant: "autumn-teaser" as const,
   },
   {
     name: "Winter",
     href: "/winter",
-    status: "live" as const,
-    image: "https://placehold.co/640x360/bfdbfe/1e3a8a?text=Winter",
+    variant: "winter-teaser" as const,
   },
 ] as const
 
@@ -46,7 +44,7 @@ export default function Page() {
 <Button variant="autumn">Button</Button>;`
 
   return (
-    <main className="mx-auto flex min-h-screen w-full max-w-2xl flex-col gap-10 px-4 py-16">
+    <main className="mx-auto flex min-h-screen w-full max-w-4xl flex-col gap-10 px-4 py-16 sm:px-6">
       <header className="space-y-4 text-center">
         <Heading
           level={1}
@@ -80,27 +78,40 @@ export default function Page() {
               href={season.href}
               className="block transition-opacity hover:opacity-90"
             >
-              <Card variant="default" className="h-full">
-                <img
-                  src={season.image}
-                  alt=""
-                  width={640}
-                  height={360}
-                  className="aspect-video w-full object-cover"
-                />
-                <CardHeader>
-                  <CardTitle>{season.name}</CardTitle>
-                  <CardAction>
-                    <Badge
-                      variant={
-                        season.status === "live" ? "default" : "secondary"
-                      }
-                    >
-                      {season.status === "live" ? "Live" : "Coming soon"}
-                    </Badge>
-                  </CardAction>
-                </CardHeader>
-              </Card>
+              {"variant" in season ? (
+                <Card
+                  variant={season.variant}
+                  className="mx-auto w-full max-w-[180px]"
+                >
+                  <CardHeader>
+                    <Heading level={3} variant="jugend" className="text-3xl">
+                      {season.name}
+                    </Heading>
+                  </CardHeader>
+                </Card>
+              ) : (
+                <Card variant="default" className="h-full">
+                  <img
+                    src={season.image}
+                    alt=""
+                    width={640}
+                    height={360}
+                    className="aspect-video w-full object-cover"
+                  />
+                  <CardHeader>
+                    <CardTitle>{season.name}</CardTitle>
+                    <CardAction>
+                      <Badge
+                        variant={
+                          season.status === "live" ? "default" : "secondary"
+                        }
+                      >
+                        {season.status === "live" ? "Live" : "Coming soon"}
+                      </Badge>
+                    </CardAction>
+                  </CardHeader>
+                </Card>
+              )}
             </Link>
           ))}
         </div>
