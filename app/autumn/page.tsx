@@ -109,14 +109,20 @@ const exhibits = [
   },
   {
     src: artNouveauInteriorArch,
-    alt: "Prague Art Nouveau doorway with clock, carved ornament, and decorative arch",
-    caption: "Interior portal",
+    alt: "Art Nouveau doorway with carved ornament, stained glass panels, and decorative arch",
+    caption: "Ornate doorway",
   },
   {
     src: antwerpCentralStation,
     alt: "Antwerp Central Station interior with stone arch, clock, and glass ceiling",
     caption: "Antwerp Central",
   },
+] as const
+
+const imageRow = [
+  { kind: "image", exhibit: exhibits[1] },
+  { kind: "skeleton" },
+  { kind: "image", exhibit: exhibits[2] },
 ] as const
 
 const movements = [
@@ -146,9 +152,9 @@ export default function AutumnPage() {
           <Heading
             level={1}
             variant="jugend"
-            className="text-4xl font-medium tracking-tight"
+            className="text-6xl font-medium tracking-tight"
           >
-            Jugend UI Showcase
+            Jugend UI Autumn Showcase
           </Heading>
           <p className="mx-auto max-w-xl text-sm leading-relaxed">
             A sample page demonstrating every UI component in this project,
@@ -158,7 +164,7 @@ export default function AutumnPage() {
 
         <Card variant="autumn" className="w-full">
           <CardHeader>
-            <Heading level={3} variant="jugend" className="text-center text-2xl">
+            <Heading level={3} variant="jugend" className="text-center text-3xl">
               The Whiplash Line
             </Heading>
             <CardDescription className="text-center">
@@ -257,7 +263,7 @@ export default function AutumnPage() {
             <AlertDialog>
               <AlertDialogTrigger asChild>
                 <Button variant="autumn" size="lg">
-                  Request catalogue
+                  View exhibition details
                 </Button>
               </AlertDialogTrigger>
               <AlertDialogContent>
@@ -265,17 +271,17 @@ export default function AutumnPage() {
                   <AlertDialogMedia>
                     <LeafIcon />
                   </AlertDialogMedia>
-                  <AlertDialogTitle>Send catalogue by post?</AlertDialogTitle>
+                  <AlertDialogTitle>The Whiplash Line</AlertDialogTitle>
                   <AlertDialogDescription>
-                    We will mail a printed folio of Jugendstil reproductions to
-                    the address in your profile. Delivery takes two to four
-                    weeks.
+                    A travelling survey of Jugendstil ornament from Munich to
+                    Brussels, featuring posters, furniture, and metalwork from
+                    1895–1910. Guided tours run Saturdays at 14:00.
                   </AlertDialogDescription>
                 </AlertDialogHeader>
                 <AlertDialogFooter>
-                  <AlertDialogCancel>Not now</AlertDialogCancel>
+                  <AlertDialogCancel>Close</AlertDialogCancel>
                   <AlertDialogAction variant="default">
-                    Send catalogue
+                    Reserve a tour
                   </AlertDialogAction>
                 </AlertDialogFooter>
               </AlertDialogContent>
@@ -287,27 +293,27 @@ export default function AutumnPage() {
           <Heading
             level={2}
             variant="jugend"
-            className="text-center text-sm font-medium text-muted-foreground"
+            className="text-center text-base font-medium text-muted-foreground"
           >
             Heading
           </Heading>
           <div className="space-y-3">
-            <Heading level={1} variant="jugend" className="text-4xl">
+            <Heading level={1} variant="jugend" className="text-6xl">
               Heading 1
             </Heading>
-            <Heading level={2} variant="jugend" className="text-3xl">
+            <Heading level={2} variant="jugend" className="text-4xl">
               Heading 2
             </Heading>
-            <Heading level={3} variant="jugend" className="text-2xl">
+            <Heading level={3} variant="jugend" className="text-3xl">
               Heading 3
             </Heading>
-            <Heading level={4} variant="jugend" className="text-xl">
+            <Heading level={4} variant="jugend" className="text-2xl">
               Heading 4
             </Heading>
-            <Heading level={5} variant="jugend" className="text-lg">
+            <Heading level={5} variant="jugend" className="text-xl">
               Heading 5
             </Heading>
-            <Heading level={6} variant="jugend" className="text-base">
+            <Heading level={6} variant="jugend" className="text-lg">
               Heading 6
             </Heading>
           </div>
@@ -326,42 +332,29 @@ export default function AutumnPage() {
             waiting rooms — ornament no longer confined to a single surface.
           </p>
           <div className="grid gap-4 sm:grid-cols-3">
-            {exhibits.map((exhibit) => (
-              <figure key={exhibit.caption} className="space-y-2">
-                <img
-                  src={exhibit.src.src}
-                  alt={exhibit.alt}
-                  width={exhibit.src.width}
-                  height={exhibit.src.height}
-                  className="aspect-[2/3] w-full rounded-sm object-cover"
-                />
+            {imageRow.map((slot) => (
+              <figure
+                key={
+                  slot.kind === "skeleton" ? "skeleton" : slot.exhibit.caption
+                }
+                className="space-y-2"
+              >
+                {slot.kind === "skeleton" ? (
+                  <Skeleton variant="autumn" className="aspect-[2/3] w-full" />
+                ) : (
+                  <img
+                    src={slot.exhibit.src.src}
+                    alt={slot.exhibit.alt}
+                    width={slot.exhibit.src.width}
+                    height={slot.exhibit.src.height}
+                    className="aspect-[2/3] w-full rounded-sm object-cover"
+                  />
+                )}
                 <figcaption className="text-center text-xs text-muted-foreground">
-                  {exhibit.caption}
+                  {slot.kind === "skeleton" ? "Skeleton" : slot.exhibit.caption}
                 </figcaption>
               </figure>
             ))}
-          </div>
-          <div className="grid gap-4 sm:grid-cols-3">
-            {exhibits.slice(0, 2).map((exhibit) => (
-              <figure key={`${exhibit.caption}-repeat`} className="space-y-2">
-                <img
-                  src={exhibit.src.src}
-                  alt={exhibit.alt}
-                  width={exhibit.src.width}
-                  height={exhibit.src.height}
-                  className="aspect-[2/3] w-full rounded-sm object-cover"
-                />
-                <figcaption className="text-center text-xs text-muted-foreground">
-                  {exhibit.caption}
-                </figcaption>
-              </figure>
-            ))}
-            <figure className="space-y-2">
-              <Skeleton variant="autumn" className="aspect-[2/3] w-full" />
-              <figcaption className="text-center text-xs text-muted-foreground">
-                Skeleton
-              </figcaption>
-            </figure>
           </div>
           <p className="text-sm leading-relaxed">
             These photographs trace that impulse across scales — a single
@@ -372,7 +365,7 @@ export default function AutumnPage() {
 
         <Card variant="autumn" className="w-full">
           <CardHeader>
-            <Heading level={3} variant="jugend" className="text-center text-2xl">
+            <Heading level={3} variant="jugend" className="text-center text-3xl">
               Visitor registration
             </Heading>
             <CardDescription className="text-center">
@@ -523,23 +516,6 @@ export default function AutumnPage() {
             </CardFooter>
           </form>
         </Card>
-
-        <section className="space-y-4">
-          <Heading
-            level={2}
-            variant="jugend"
-            className="text-center text-sm font-medium text-muted-foreground"
-          >
-            Separator
-          </Heading>
-          <div className="flex h-8 items-center justify-center gap-3">
-            <span className="text-sm">Gallery</span>
-            <Separator orientation="vertical" />
-            <span className="text-sm">Archive</span>
-            <Separator orientation="vertical" />
-            <span className="text-sm">Shop</span>
-          </div>
-        </section>
       </div>
     </main>
   )

@@ -2,13 +2,40 @@ import Link from "next/link"
 
 import { CodeBlock } from "@/components/code-block"
 import { Badge } from "@/components/ui/badge"
+import {
+  Card,
+  CardAction,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+import { Heading } from "@/components/ui/heading"
 import { getSiteUrl } from "@/lib/site-url"
 
 const seasons = [
-  { name: "Spring", href: "/spring", status: "coming soon" as const },
-  { name: "Summer", href: "/summer", status: "coming soon" as const },
-  { name: "Autumn", href: "/autumn", status: "live" as const },
-  { name: "Winter", href: "/winter", status: "coming soon" as const },
+  {
+    name: "Spring",
+    href: "/spring",
+    status: "coming soon" as const,
+    image: "https://placehold.co/640x360/a7f3d0/065f46?text=Spring",
+  },
+  {
+    name: "Summer",
+    href: "/summer",
+    status: "coming soon" as const,
+    image: "https://placehold.co/640x360/fde68a/92400e?text=Summer",
+  },
+  {
+    name: "Autumn",
+    href: "/autumn",
+    status: "live" as const,
+    image: "https://placehold.co/640x360/fdba74/7c2d12?text=Autumn",
+  },
+  {
+    name: "Winter",
+    href: "/winter",
+    status: "coming soon" as const,
+    image: "https://placehold.co/640x360/bfdbfe/1e3a8a?text=Winter",
+  },
 ] as const
 
 export default function Page() {
@@ -21,16 +48,20 @@ export default function Page() {
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-2xl flex-col gap-10 px-4 py-16">
       <header className="space-y-4 text-center">
-        <h1 className="text-4xl font-medium tracking-tight">Jugend UI</h1>
+        <Heading
+          level={1}
+          variant="jugend"
+          className="text-6xl font-medium tracking-tight"
+        >
+          Jugend UI
+        </Heading>
         <p className="text-muted-foreground text-sm leading-relaxed">
-          Art Nouveau / Jugendstil UI components. Free. Open Source.
-        </p>
-        <p>
+          Art Nouveau / Jugendstil UI components. Free. Open Source.{" "}
           <Link
-            href="/autumn"
-            className="text-sm font-medium underline-offset-4 hover:underline"
+            href="https://github.com/mauricewipf/jugend-ui"
+            className="font-medium underline-offset-4 hover:underline"
           >
-            View component showcase →
+            View on GitHub
           </Link>
         </p>
       </header>
@@ -39,17 +70,34 @@ export default function Page() {
         <h2 className="text-center text-xs font-medium tracking-wide text-muted-foreground uppercase">
           Seasons
         </h2>
-        <div className="grid w-full gap-3">
+        <div className="grid w-full gap-4 sm:grid-cols-2">
           {seasons.map((season) => (
             <Link
               key={season.href}
               href={season.href}
-              className="hover:bg-muted flex items-center justify-between rounded-lg border px-4 py-3 text-sm font-medium transition-colors"
+              className="block transition-opacity hover:opacity-90"
             >
-              <span>{season.name}</span>
-              <Badge variant={season.status === "live" ? "default" : "secondary"}>
-                {season.status === "live" ? "Live" : "Coming soon"}
-              </Badge>
+              <Card variant="default" className="h-full">
+                <img
+                  src={season.image}
+                  alt=""
+                  width={640}
+                  height={360}
+                  className="aspect-video w-full object-cover"
+                />
+                <CardHeader>
+                  <CardTitle>{season.name}</CardTitle>
+                  <CardAction>
+                    <Badge
+                      variant={
+                        season.status === "live" ? "default" : "secondary"
+                      }
+                    >
+                      {season.status === "live" ? "Live" : "Coming soon"}
+                    </Badge>
+                  </CardAction>
+                </CardHeader>
+              </Card>
             </Link>
           ))}
         </div>
