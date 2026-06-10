@@ -243,7 +243,7 @@ function JugendCardExampleMedium() {
         <CardHeader>
           <CardTitle align="center">Art Nouveau Card</CardTitle>
           <CardDescription>
-            Styled with the decorative card-frame-1.svg border
+            Styled with the decorative autumn/card-frame.svg border
           </CardDescription>
         </CardHeader>
         <CardContent>

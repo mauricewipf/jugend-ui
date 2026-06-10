@@ -27,7 +27,7 @@ bunx shadcn@latest add https://jugend-ui.vercel.app/r/button.json
 ## Fonts & assets
 
 - **Ambrosia** ([Font Library](https://fontlibrary.org/en/font/ambrosia)) — OFL, bundled for `jugend` headings
-- **Demo photos** — see [`app/autumn/images/ATTRIBUTION.md`](app/autumn/images/ATTRIBUTION.md) (Unsplash License)
+- **Demo photos** — see [`assets/showcase/images/ATTRIBUTION.md`](assets/showcase/images/ATTRIBUTION.md) (Unsplash License)
 - **SVG frames** — project-generated Art Nouveau frames, MIT-licensed with the code
 - **Optional dev tooling** — `scripts/generate-svg.ts` uses `QUIVERAI_API_KEY` (see `.env.local.example`)
 

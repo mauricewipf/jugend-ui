@@ -17,14 +17,16 @@ Open [http://localhost:3000](http://localhost:3000) for the landing page and [ht
 |------|-------------|
 | `/app` | Next.js App Router pages |
 | `/components/ui` | shadcn/ui components with Jugendstil variants |
-| `/public` | SVG frame assets served at runtime |
+| `/assets` | Shared static assets (fonts, showcase photos) |
+| `/public/autumn`, `/public/winter` | Seasonal SVG frame assets served at runtime |
+| `/lib/showcase-content.ts` | Shared demo data for season showcase pages |
 | `/registry.json` | shadcn registry source |
 | `/public/r` | Built registry JSON (`bun run registry:build`) |
 
 ## Adding or changing a component
 
 1. Edit the component under `components/ui/`.
-2. Add or update the matching SVG frame in `public/` if needed.
+2. Add or update the matching SVG frame in `public/<season>/` if needed.
 3. Update `registry.json` with the component metadata.
 4. Rebuild the registry: `bun run registry:build`.
 5. Update the landing page install snippet in `app/page.tsx` if the featured component changes.

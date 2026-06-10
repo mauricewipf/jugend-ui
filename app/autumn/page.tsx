@@ -73,48 +73,11 @@ import {
   SendIcon,
 } from "lucide-react"
 
-import antwerpCentralStation from "./images/antwerp-central-station.jpg"
-import artNouveauBalcony from "./images/art-nouveau-balcony.jpg"
-import artNouveauInteriorArch from "./images/art-nouveau-interior-arch.jpg"
-
-const exhibits = [
-  {
-    src: artNouveauBalcony,
-    alt: "Art Nouveau building facade with ornate architectural details and balcony in Zagreb",
-    caption: "Facade ornament",
-  },
-  {
-    src: artNouveauInteriorArch,
-    alt: "Art Nouveau doorway with carved ornament, stained glass panels, and decorative arch",
-    caption: "Ornate doorway",
-  },
-  {
-    src: antwerpCentralStation,
-    alt: "Antwerp Central Station interior with stone arch, clock, and glass ceiling",
-    caption: "Antwerp Central",
-  },
-] as const
-
-const imageRow = [
-  { kind: "image", exhibit: exhibits[1] },
-  { kind: "skeleton" },
-  { kind: "image", exhibit: exhibits[2] },
-] as const
-
-const movements = [
-  "Jugendstil",
-  "Art Nouveau",
-  "Modern Style",
-  "Sezession",
-  "Stile Liberty",
-] as const
-
-const mediums = [
-  { value: "poster", label: "Poster" },
-  { value: "glass", label: "Stained Glass" },
-  { value: "furniture", label: "Furniture" },
-  { value: "jewelry", label: "Jewelry" },
-] as const
+import {
+  imageRow,
+  mediums,
+  movements,
+} from "@/lib/showcase-content"
 
 export default function AutumnPage() {
   return (

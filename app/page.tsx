@@ -34,7 +34,7 @@ const seasons = [
   {
     name: "Winter",
     href: "/winter",
-    status: "coming soon" as const,
+    status: "live" as const,
     image: "https://placehold.co/640x360/bfdbfe/1e3a8a?text=Winter",
   },
 ] as const
