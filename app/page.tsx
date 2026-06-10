@@ -57,6 +57,15 @@ export default function Page() {
             View on GitHub →
           </a>
         </p>
+        <p className="text-muted-foreground text-sm leading-relaxed">
+          Crafted by{" "}
+          <a
+            className="text-foreground font-medium underline-offset-4 hover:underline"
+            href="https://x.com/mauwi"
+          >
+            Maurice Wipf →
+          </a>
+        </p>
       </header>
 
       <nav className="space-y-3">
