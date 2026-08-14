@@ -19,6 +19,8 @@ const separatorVariants = cva(
           "border-0 bg-transparent data-horizontal:h-auto data-vertical:h-full data-vertical:w-auto [&_img]:block [&_img]:h-auto [&_img]:w-full data-vertical:[&_img]:h-full data-vertical:[&_img]:w-auto data-vertical:[&_img]:rotate-90",
         spring:
           "border-0 bg-transparent data-horizontal:h-auto data-vertical:h-full data-vertical:w-auto [&_img]:block [&_img]:h-auto [&_img]:w-full data-vertical:[&_img]:h-full data-vertical:[&_img]:w-auto data-vertical:[&_img]:rotate-90",
+        summer:
+          "border-0 bg-transparent data-horizontal:h-auto data-vertical:h-full data-vertical:w-auto [&_img]:block [&_img]:h-auto [&_img]:w-full data-vertical:[&_img]:h-full data-vertical:[&_img]:w-auto data-vertical:[&_img]:rotate-90",
       },
     },
     defaultVariants: {
@@ -35,7 +37,7 @@ function Separator({
   ...props
 }: React.ComponentProps<typeof SeparatorPrimitive.Root> &
   VariantProps<typeof separatorVariants>) {
-  if (variant === "autumn" || variant === "winter" || variant === "spring") {
+  if (variant === "autumn" || variant === "winter" || variant === "spring" || variant === "summer") {
     const src = `/${variant}/separator.svg`
 
     return (

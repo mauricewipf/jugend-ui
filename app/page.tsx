@@ -16,7 +16,6 @@ const seasons = [
     name: "Summer",
     href: "/summer",
     variant: "summer-teaser" as const,
-    comingSoon: true,
   },
   {
     name: "Autumn",
