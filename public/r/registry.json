@@ -7,7 +7,8 @@
       "name": "button",
       "type": "registry:ui",
       "title": "Button",
-      "description": "Art Nouveau autumn button with decorative SVG border-image frame.",
+      "description": "Art Nouveau & Vienna Secession button with 4 decorative SVG border-image frame styles across 4 seasons.",
+      "dependencies": ["radix-ui"],
       "files": [
         {
           "path": "components/ui/button.tsx",
@@ -19,7 +20,7 @@
       "name": "card",
       "type": "registry:ui",
       "title": "Card",
-      "description": "Art Nouveau autumn card with decorative SVG border-image frame.",
+      "description": "Art Nouveau, Salon Passe-Partout & Vienna Secession card with responsive SVG border-image frames.",
       "files": [
         {
           "path": "components/ui/card.tsx",
@@ -28,10 +29,23 @@
       ]
     },
     {
+      "name": "badge",
+      "type": "registry:ui",
+      "title": "Badge",
+      "description": "Art Nouveau cartouche, Secession lozenge & gilded ribbon badge variants.",
+      "dependencies": ["radix-ui"],
+      "files": [
+        {
+          "path": "components/ui/badge.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "skeleton",
       "type": "registry:ui",
       "title": "Skeleton",
-      "description": "Art Nouveau autumn skeleton placeholder with decorative frame.",
+      "description": "Art Nouveau portrait & compact bar skeleton placeholders with decorative SVG frames.",
       "files": [
         {
           "path": "components/ui/skeleton.tsx",
@@ -43,7 +57,7 @@
       "name": "separator",
       "type": "registry:ui",
       "title": "Separator",
-      "description": "Art Nouveau autumn separator with decorative SVG frame.",
+      "description": "Art Nouveau frieze, slice-safe finial rule & centered fleuron dividers.",
       "dependencies": ["radix-ui"],
       "files": [
         {
@@ -56,7 +70,7 @@
       "name": "heading-jugend",
       "type": "registry:ui",
       "title": "Heading (Jugend)",
-      "description": "Jugendstil heading using the Ambrosia OFL display font.",
+      "description": "Jugendstil display heading using the Ambrosia OFL font with optional flourish and cartouche plaque.",
       "files": [
         {
           "path": "components/ui/heading-jugend.tsx",
@@ -79,6 +93,211 @@
           "path": "assets/fonts/ambrosia/OFL.txt",
           "type": "registry:file",
           "target": "~/assets/fonts/ambrosia/OFL.txt"
+        }
+      ]
+    },
+    {
+      "name": "tabs",
+      "type": "registry:ui",
+      "title": "Tabs",
+      "description": "Botanical arch register, Salon cartouche tray & Vienna Secession tabs.",
+      "dependencies": ["radix-ui"],
+      "files": [
+        {
+          "path": "components/ui/tabs.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "accordion",
+      "type": "registry:ui",
+      "title": "Accordion",
+      "description": "Botanical folio plates, Salon passe-partout stack & Vienna Secession cabinet accordion.",
+      "dependencies": ["radix-ui", "lucide-react"],
+      "files": [
+        {
+          "path": "components/ui/accordion.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "breadcrumb",
+      "type": "registry:ui",
+      "title": "Breadcrumb",
+      "description": "Botanical vine trail, gilded ribbon wayfinder & Vienna Secession header bar breadcrumbs.",
+      "dependencies": ["radix-ui", "lucide-react"],
+      "files": [
+        {
+          "path": "components/ui/breadcrumb.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "pagination",
+      "type": "registry:ui",
+      "title": "Pagination",
+      "description": "Botanical folio medallions, Salon scroll tray & Vienna Secession Quadratstil pagination.",
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "components/ui/pagination.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "alert",
+      "type": "registry:ui",
+      "title": "Alert",
+      "description": "Botanical broadside, Salon notice & Vienna Secession inline alert callouts.",
+      "files": [
+        {
+          "path": "components/ui/alert.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "alert-dialog",
+      "type": "registry:ui",
+      "title": "Alert Dialog",
+      "description": "Whiplash botanical decree & Vienna Secession confirmation dialogs.",
+      "dependencies": ["radix-ui"],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "components/ui/alert-dialog.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "dialog",
+      "type": "registry:ui",
+      "title": "Dialog",
+      "description": "Botanical grand folio, Salon lunette dossier & Vienna Secession modals.",
+      "dependencies": ["radix-ui", "lucide-react"],
+      "files": [
+        {
+          "path": "components/ui/dialog.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "sheet",
+      "type": "registry:ui",
+      "title": "Sheet",
+      "description": "Botanical folding door, Salon wing & Vienna Secession slide-over drawer panels.",
+      "dependencies": ["radix-ui", "lucide-react"],
+      "files": [
+        {
+          "path": "components/ui/sheet.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "dropdown-menu",
+      "type": "registry:ui",
+      "title": "Dropdown Menu",
+      "description": "Botanical parchment & Vienna Secession cabinet contextual menus.",
+      "dependencies": ["radix-ui", "lucide-react"],
+      "files": [
+        {
+          "path": "components/ui/dropdown-menu.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "popover",
+      "type": "registry:ui",
+      "title": "Popover",
+      "description": "Botanical vignette, Salon vitrine & Vienna Secession floating popovers.",
+      "dependencies": ["radix-ui"],
+      "files": [
+        {
+          "path": "components/ui/popover.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tooltip",
+      "type": "registry:ui",
+      "title": "Tooltip",
+      "description": "Botanical cartouche, Salon brass tag & Vienna Secession octagonal specimen tooltips.",
+      "dependencies": ["radix-ui"],
+      "files": [
+        {
+          "path": "components/ui/tooltip.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "avatar",
+      "type": "registry:ui",
+      "title": "Avatar",
+      "description": "Mucha zodiac halo, Salon cameo bezel & Vienna Secession octagonal portrait medallions.",
+      "dependencies": ["radix-ui"],
+      "files": [
+        {
+          "path": "components/ui/avatar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "progress",
+      "type": "registry:ui",
+      "title": "Progress",
+      "description": "Botanical brass gauge, Salon calibrated enamel & Vienna Secession progress meters.",
+      "dependencies": ["radix-ui"],
+      "files": [
+        {
+          "path": "components/ui/progress.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "table",
+      "type": "registry:ui",
+      "title": "Table",
+      "description": "Botanical atelier catalogue, Salon striped ledger & Vienna Secession responsive tables.",
+      "files": [
+        {
+          "path": "components/ui/table.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "blockquote",
+      "type": "registry:ui",
+      "title": "Blockquote",
+      "description": "Botanical epigraph scroll, Salon literary plaque & Vienna Secession manifesto blockquotes.",
+      "files": [
+        {
+          "path": "components/ui/blockquote.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "empty",
+      "type": "registry:ui",
+      "title": "Empty",
+      "description": "Botanical arch alcove, Salon passe-partout niche & Vienna Secession empty states.",
+      "files": [
+        {
+          "path": "components/ui/empty.tsx",
+          "type": "registry:ui"
         }
       ]
     }
