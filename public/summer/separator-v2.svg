@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 26">
+  <!-- Duplicated from separator.svg and restructured for seamless border-image-slice (0 56 0 56) -->
+  <line x1="36" y1="8.5" x2="264" y2="8.5" stroke="#8B5F0A" stroke-width="0.6"/>
+  <line x1="36" y1="17.5" x2="264" y2="17.5" stroke="#8B5F0A" stroke-width="0.6"/>
+  <rect x="32" y="11.2" width="236" height="3.6" fill="#E0A822" stroke="#3F2A04" stroke-width="0.65"/>
+
+  <g id="finial">
+    <path d="M36 11.2 H26 C18 11.2 14 5.2 8.5 6.2 C3.8 7 2.5 12.2 6.2 15.4 C9.2 17.8 13.8 16.4 13.5 13.2 C13.2 11 10.8 10.6 10 12.2 C9 10.4 11.8 8.2 14.8 9.6 C19.4 11.8 22.5 14.8 28 14.8 H36" fill="#E0A822" stroke="#3F2A04" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M35 11.2 C29 7.2 23 3.4 16.8 4.2 C21.8 5.6 26 8.8 30.2 11.2 Z" fill="#F7C843" stroke="#3F2A04" stroke-width="0.45" stroke-linejoin="round"/>
+    <path d="M35 14.8 C29 18.8 23 22.6 16.8 21.8 C21.8 20.4 26 17.2 30.2 14.8 Z" fill="#F7C843" stroke="#3F2A04" stroke-width="0.45" stroke-linejoin="round"/>
+    <polygon points="48,13 42.5,7.5 37,13 42.5,18.5" fill="#F7C843" stroke="#3F2A04" stroke-width="0.6"/>
+    <circle cx="42.5" cy="13" r="1.5" fill="#FFFEF5" stroke="#3F2A04" stroke-width="0.45"/>
+    <g transform="translate(19 13) scale(0.72)">
+        <circle cx="0" cy="0" r="2.1" fill="#F7C843" stroke="#3F2A04" stroke-width="0.4"/>
+        <circle cx="0" cy="0" r="0.85" fill="#A87410"/>
+        <circle cx="3.4" cy="1.8" r="1.15" fill="#F7C843" stroke="#3F2A04" stroke-width="0.35"/>
+        <circle cx="-1.8" cy="3.2" r="1.15" fill="#F7C843" stroke="#3F2A04" stroke-width="0.35"/>
+      </g>
+  </g>
+  <use href="#finial" transform="translate(300 0) scale(-1 1)"/>
+</svg>

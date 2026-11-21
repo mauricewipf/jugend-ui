@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <polygon points="10,2 190,2 198,10 198,190 190,198 10,198 2,190 2,10" fill="#F0F9EC" stroke="#2F441B" stroke-width="1.2"/>
+  <rect x="7" y="7" width="186" height="186" fill="none" stroke="#78AA48" stroke-width="2"/>
+  <rect x="12" y="12" width="176" height="176" fill="none" stroke="#4A6B2E" stroke-width="0.6"/>
+  <g id="emp-sec-c">
+    <rect x="5" y="5" width="12" height="12" fill="#A3CF72" stroke="#2F441B" stroke-width="0.7"/>
+    <rect x="8.2" y="8.2" width="5.6" height="5.6" fill="#4B6E2C"/>
+    <path d="M12 27 H21 V21 H27" fill="none" stroke="#2F441B" stroke-width="0.7"/>
+  </g>
+  <use href="#emp-sec-c" transform="translate(200 0) scale(-1 1)"/>
+  <use href="#emp-sec-c" transform="translate(0 200) scale(1 -1)"/>
+  <use href="#emp-sec-c" transform="translate(200 200) scale(-1 -1)"/>
+</svg>

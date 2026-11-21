@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="pg1-act" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#CFA044"/>
+      <stop offset="100%" stop-color="#B0802E"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="8" fill="url(#pg1-act)" stroke="#473418" stroke-width="1.35"/>
+  <rect x="5.5" y="5.5" width="53" height="53" rx="5" fill="none" stroke="#FBF3E3" stroke-width="1"/>
+  <g id="pg1a-c">
+    <path d="M5.5 17 C6.2 10 10 6.2 17 5.5 C13.5 8 11.8 10.5 11.2 14.5 C9.2 13.5 7.2 14.8 5.5 17 Z" fill="#FBF3E3" stroke="#473418" stroke-width="0.55"/>
+    <circle cx="8.5" cy="8.5" r="1.5" fill="#473418"/>
+  </g>
+  <use href="#pg1a-c" transform="translate(64 0) scale(-1 1)"/>
+  <use href="#pg1a-c" transform="translate(0 64) scale(1 -1)"/>
+  <use href="#pg1a-c" transform="translate(64 64) scale(-1 -1)"/>
+</svg>

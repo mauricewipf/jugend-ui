@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect x="3" y="3" width="194" height="194" rx="8" fill="#F0F9EC" stroke="#2F441B" stroke-width="1.2"/>
+  <path d="M7 7H193V193H7ZM12 12V188H188V12Z" fill="#78AA48" fill-rule="evenodd" stroke="#2F441B" stroke-width="0.65"/>
+  <rect x="15.5" y="15.5" width="169" height="169" fill="none" stroke="#A3CF72" stroke-width="0.8"/>
+  <rect x="19" y="19" width="162" height="162" fill="none" stroke="#4A6B2E" stroke-width="0.55"/>
+
+  <g id="mod1-c">
+    <path d="M12 12 C28 13 39 19 44 30 C46.5 35.5 45.5 41.5 41 44.5 C38 46.5 34.5 45.5 34.5 42.8 C34.5 40.8 36.8 40.2 37.8 41.6 C39.8 40.2 40.8 36.2 39 31.8 C35 22.5 25.5 17.5 12 16 Z" fill="#A3CF72" stroke="#2F441B" stroke-width="0.6"/>
+    <path d="M22 16.5 C30.5 17 36 22.5 35.2 31.5 C29.2 30 24.5 24.8 22 16.5 Z" fill="#78AA48" stroke="#2F441B" stroke-width="0.5"/>
+    <path d="M24.2 18.8 C28.2 22.8 31.5 26.5 33.6 30" fill="none" stroke="#F0F9EC" stroke-width="0.55" stroke-linecap="round"/>
+    <path d="M16.5 22 C17 30.5 22.5 36 31.5 35.2 C30 29.2 24.8 24.5 16.5 22 Z" fill="#A3CF72" stroke="#2F441B" stroke-width="0.5"/>
+    <path d="M18.8 24.2 C22.8 28.2 26.5 31.5 30 33.6" fill="none" stroke="#4A6B2E" stroke-width="0.5" stroke-linecap="round"/>
+    <g transform="translate(41 18.5) scale(0.95)">
+        <path d="M0 -2.6 C1.8 -1.2 1.8 1.4 0 2.8 C-1.8 1.4 -1.8 -1.2 0 -2.6Z" fill="#A3CF72" stroke="#2F441B" stroke-width="0.4"/>
+        <path d="M2.6 0.2 C4.2 -0.6 4.8 1.2 3.2 2.4 C1.8 2.2 1.6 1 2.6 0.2Z" fill="#78AA48" stroke="#2F441B" stroke-width="0.35"/>
+        <circle cx="-2.2" cy="2.2" r="1.1" fill="#A3CF72" stroke="#2F441B" stroke-width="0.35"/>
+      </g>
+    <circle cx="19" cy="19" r="2.2" fill="#A3CF72" stroke="#2F441B" stroke-width="0.55"/>
+  </g>
+  <use href="#mod1-c" transform="translate(200 0) scale(-1 1)"/>
+  <use href="#mod1-c" transform="translate(0 200) scale(1 -1)"/>
+  <use href="#mod1-c" transform="translate(200 200) scale(-1 -1)"/>
+</svg>

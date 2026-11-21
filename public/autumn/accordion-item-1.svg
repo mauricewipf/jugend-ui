@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80">
+  <rect x="2" y="2" width="196" height="76" rx="5" fill="#FBF3E3" stroke="#473418" stroke-width="1.15"/>
+  <rect x="5.5" y="5.5" width="189" height="69" rx="3" fill="none" stroke="#AE8746" stroke-width="1.6"/>
+  <rect x="8.8" y="8.8" width="182.4" height="62.4" fill="none" stroke="#684F28" stroke-width="0.5"/>
+  <g id="acc1-c">
+    <path d="M5.5 21 C6.2 11.5 11.5 6.2 21 5.5 C16 8.8 13.5 12.2 13 17.5 C10.5 16 8 17.5 5.5 21 Z" fill="#D6AC54" stroke="#473418" stroke-width="0.5"/>
+    <path d="M10.5 10.5 C15.8 11 19.2 14.2 19.5 19.2 C15 18.5 12 15.5 10.5 10.5 Z" fill="#AE8746" stroke="#473418" stroke-width="0.45"/>
+    <g transform="translate(19 9.5) scale(0.58)">
+        <circle cx="0" cy="0" r="1.8" fill="#7D491A" stroke="#473418" stroke-width="0.35"/>
+        <circle cx="3.2" cy="2.2" r="1.35" fill="#D6AC54" stroke="#473418" stroke-width="0.35"/>
+        <circle cx="-2.4" cy="2.8" r="1.2" fill="#7D491A" stroke="#473418" stroke-width="0.35"/>
+      </g>
+    <circle cx="8.8" cy="8.8" r="1.6" fill="#7D491A" stroke="#473418" stroke-width="0.4"/>
+  </g>
+  <use href="#acc1-c" transform="translate(200 0) scale(-1 1)"/>
+  <use href="#acc1-c" transform="translate(0 80) scale(1 -1)"/>
+  <use href="#acc1-c" transform="translate(200 80) scale(-1 -1)"/>
+</svg>

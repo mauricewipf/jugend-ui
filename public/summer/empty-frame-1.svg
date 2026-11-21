@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 200">
+  <rect x="3" y="3" width="214" height="194" rx="8" fill="#FFFEF5" stroke="#3F2A04" stroke-width="1.2"/>
+  <rect x="7" y="7" width="206" height="186" rx="5" fill="none" stroke="#E0A822" stroke-width="2"/>
+  <rect x="12" y="12" width="196" height="176" fill="none" stroke="#8B5F0A" stroke-width="0.6"/>
+  <g id="emp1-tc">
+    <path d="M12 40 C12 22 22 12 40 12 H12 Z" fill="#F7C843" fill-opacity="0.5" stroke="#E0A822" stroke-width="0.65"/>
+    <path d="M14 14 C25 15 33 21 36 31 C28 29 21 23 14 14 Z" fill="#E0A822" stroke="#3F2A04" stroke-width="0.5"/>
+    <g transform="translate(35 16.5) scale(0.82)">
+        <circle cx="0" cy="0" r="2.1" fill="#F7C843" stroke="#3F2A04" stroke-width="0.4"/>
+        <circle cx="0" cy="0" r="0.85" fill="#A87410"/>
+        <circle cx="3.4" cy="1.8" r="1.15" fill="#F7C843" stroke="#3F2A04" stroke-width="0.35"/>
+        <circle cx="-1.8" cy="3.2" r="1.15" fill="#F7C843" stroke="#3F2A04" stroke-width="0.35"/>
+      </g>
+  </g>
+  <use href="#emp1-tc" transform="translate(220 0) scale(-1 1)"/>
+  <use href="#emp1-tc" transform="translate(0 200) scale(1 -1)"/>
+  <use href="#emp1-tc" transform="translate(220 200) scale(-1 -1)"/>
+</svg>

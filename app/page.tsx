@@ -1,7 +1,16 @@
 import Link from "next/link"
 
 import { CodeBlock } from "@/components/code-block"
-import { Card, CardHeader } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
 import { Heading } from "@/components/ui/heading"
 import { getSiteUrl } from "@/lib/site-url"
 import registry from "@/registry.json"
@@ -67,6 +76,30 @@ export default function Page() {
           </a>
         </p>
       </header>
+
+      <Card variant="autumn-salon" className="w-full">
+        <CardHeader>
+          <Badge variant="autumn-ribbon" className="mx-auto mb-1">
+            New · Complete Library Review
+          </Badge>
+          <CardTitle align="center" className="text-3xl sm:text-4xl">
+            Component Review Atelier
+          </CardTitle>
+          <CardDescription className="text-center">
+            Explore all 22 Jugend UI components across Botanical, Salon
+            Passe-Partout, and Vienna Secession versions in all four seasons.
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="text-center text-sm">
+          Compare multiple versions side-by-side on mobile and desktop to choose
+          your preferred frames.
+        </CardContent>
+        <CardFooter className="justify-center">
+          <Button variant="autumn-gilded" size="lg" asChild>
+            <Link href="/showcase">Open Review Atelier →</Link>
+          </Button>
+        </CardFooter>
+      </Card>
 
       <nav className="space-y-3">
         <h2 className="text-center text-xs font-medium tracking-wide text-muted-foreground uppercase">

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <polygon points="10,2 190,2 198,10 198,190 190,198 10,198 2,190 2,10" fill="#FFFEF5" stroke="#3F2A04" stroke-width="1.2"/>
+  <polygon points="13,6 187,6 194,13 194,187 187,194 13,194 6,187 6,13" fill="none" stroke="#E0A822" stroke-width="2.4"/>
+  <rect x="11.5" y="11.5" width="177" height="177" fill="none" stroke="#3F2A04" stroke-width="0.75"/>
+  <rect x="15" y="15" width="170" height="170" fill="none" stroke="#E0A822" stroke-width="0.6"/>
+  <g id="mod2-c">
+    <rect x="6" y="6" width="14" height="14" fill="#FBF0BE" stroke="#3F2A04" stroke-width="0.8"/>
+    <polygon points="13,8 18,13 13,18 8,13" fill="#A87410" stroke="#3F2A04" stroke-width="0.5"/>
+    <rect x="23" y="7.8" width="4" height="4" fill="#F7C843" stroke="#3F2A04" stroke-width="0.45"/>
+    <rect x="29" y="7.8" width="4" height="4" fill="#A87410" stroke="#3F2A04" stroke-width="0.45"/>
+    <rect x="35" y="7.8" width="4" height="4" fill="#F7C843" stroke="#3F2A04" stroke-width="0.45"/>
+    <rect x="7.8" y="23" width="4" height="4" fill="#F7C843" stroke="#3F2A04" stroke-width="0.45"/>
+    <rect x="7.8" y="29" width="4" height="4" fill="#A87410" stroke="#3F2A04" stroke-width="0.45"/>
+    <rect x="7.8" y="35" width="4" height="4" fill="#F7C843" stroke="#3F2A04" stroke-width="0.45"/>
+    <path d="M15 29 H22 V22 H29" fill="none" stroke="#3F2A04" stroke-width="0.75"/>
+  </g>
+  <use href="#mod2-c" transform="translate(200 0) scale(-1 1)"/>
+  <use href="#mod2-c" transform="translate(0 200) scale(1 -1)"/>
+  <use href="#mod2-c" transform="translate(200 200) scale(-1 -1)"/>
+</svg>

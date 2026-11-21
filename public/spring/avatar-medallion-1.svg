@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Mucha Zodiac Botanical Halo with r=36.5 transparent portrait aperture -->
+  <path d="M50 4 A46 46 0 1 1 49.99 4 Z M50 13.5 A36.5 36.5 0 1 0 50.01 13.5 Z" fill="#78AA48" fill-rule="evenodd" stroke="#2F441B" stroke-width="1.2"/>
+  <circle cx="50" cy="50" r="42.5" fill="none" stroke="#A3CF72" stroke-width="1.4"/>
+  <circle cx="50" cy="50" r="36.5" fill="none" stroke="#2F441B" stroke-width="1.1"/>
+  <!-- Crown fleuron at 12h -->
+  <path d="M40 8 C45 2 55 2 60 8 C55 7 52 9.5 50 13 C48 9.5 45 7 40 8 Z" fill="#A3CF72" stroke="#2F441B" stroke-width="0.8"/>
+  <circle cx="50" cy="6.5" r="2.2" fill="#F0F9EC" stroke="#2F441B" stroke-width="0.65"/>
+  <!-- Crescent whiplash plumes on left & right -->
+  <path d="M8 38 C4 50 8 64 18 74 C12 63 11 51 13.5 40 Z" fill="#A3CF72" stroke="#2F441B" stroke-width="0.7"/>
+  <path d="M92 38 C96 50 92 64 82 74 C88 63 89 51 86.5 40 Z" fill="#A3CF72" stroke="#2F441B" stroke-width="0.7"/>
+  <!-- Bottom botanical cluster at 6h -->
+  <g transform="translate(50 91.5) scale(1.05)">
+        <path d="M0 -2.6 C1.8 -1.2 1.8 1.4 0 2.8 C-1.8 1.4 -1.8 -1.2 0 -2.6Z" fill="#A3CF72" stroke="#2F441B" stroke-width="0.4"/>
+        <path d="M2.6 0.2 C4.2 -0.6 4.8 1.2 3.2 2.4 C1.8 2.2 1.6 1 2.6 0.2Z" fill="#78AA48" stroke="#2F441B" stroke-width="0.35"/>
+        <circle cx="-2.2" cy="2.2" r="1.1" fill="#A3CF72" stroke="#2F441B" stroke-width="0.35"/>
+      </g>
+</svg>
