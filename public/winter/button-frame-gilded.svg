@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 64">
+  <defs>
+    <linearGradient id="gild-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#94BCE0"/>
+      <stop offset="100%" stop-color="#6A9BC2"/>
+    </linearGradient>
+  </defs>
+  <path d="M12 1.5 H168 C173.8 1.5 178.5 6.2 178.5 12 V52 C178.5 57.8 173.8 62.5 168 62.5 H12 C6.2 62.5 1.5 57.8 1.5 52 V12 C1.5 6.2 6.2 1.5 12 1.5 Z" fill="url(#gild-bg)" stroke="#1F3A56" stroke-width="1.2"/>
+  <rect x="5" y="5" width="170" height="54" rx="7" fill="none" stroke="#F2F8FC" stroke-width="0.95" stroke-opacity="0.9"/>
+  <rect x="7.5" y="7.5" width="165" height="49" rx="5" fill="none" stroke="#1F3A56" stroke-width="0.6"/>
+  <g id="gild-c">
+    <path d="M5 18 C5 9.5 9.5 5 18 5 C14 7.5 12 10.5 11.5 15.5 C9 14.5 7 15.5 5 18 Z" fill="#F2F8FC" stroke="#1F3A56" stroke-width="0.55"/>
+    <circle cx="11" cy="11" r="2" fill="#F2F8FC" stroke="#1F3A56" stroke-width="0.55"/>
+    <path d="M13.5 7.5 C16.5 7.5 18.5 9 19 11.2 C16.4 11.2 14.5 9.8 13.5 7.5 Z" fill="#A9CDE8" stroke="#1F3A56" stroke-width="0.45"/>
+  </g>
+  <use href="#gild-c" transform="translate(180 0) scale(-1 1)"/>
+  <use href="#gild-c" transform="translate(0 64) scale(1 -1)"/>
+  <use href="#gild-c" transform="translate(180 64) scale(-1 -1)"/>
+</svg>

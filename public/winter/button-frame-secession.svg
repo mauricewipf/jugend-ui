@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 64">
+  <polygon points="8,1.5 172,1.5 178.5,8 178.5,56 172,62.5 8,62.5 1.5,56 1.5,8" fill="#F2F8FC" stroke="#1F3A56" stroke-width="1.1"/>
+  <polygon points="10,4 170,4 176,10 176,54 170,60 10,60 4,54 4,10" fill="none" stroke="#7BA7CC" stroke-width="2"/>
+  <rect x="7.5" y="7.5" width="165" height="49" fill="none" stroke="#34597D" stroke-width="0.6"/>
+  <g id="sec-btn-c">
+    <rect x="3.5" y="3.5" width="5.5" height="5.5" fill="#A9CDE8" stroke="#1F3A56" stroke-width="0.6"/>
+    <rect x="10.8" y="3.8" width="3.2" height="3.2" fill="#34597D" stroke="#1F3A56" stroke-width="0.45"/>
+    <rect x="15.5" y="3.8" width="3.2" height="3.2" fill="#7BA7CC" stroke="#1F3A56" stroke-width="0.45"/>
+    <rect x="3.8" y="10.8" width="3.2" height="3.2" fill="#34597D" stroke="#1F3A56" stroke-width="0.45"/>
+    <path d="M7.5 14.5 H11.5 V10.5 H15.5" fill="none" stroke="#1F3A56" stroke-width="0.6"/>
+  </g>
+  <use href="#sec-btn-c" transform="translate(180 0) scale(-1 1)"/>
+  <use href="#sec-btn-c" transform="translate(0 64) scale(1 -1)"/>
+  <use href="#sec-btn-c" transform="translate(180 64) scale(-1 -1)"/>
+</svg>

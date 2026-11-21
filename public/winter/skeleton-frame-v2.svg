@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 56">
+  <!-- Compact skeleton frame with crisp corner leaves over inner shimmer. Slice 18/18 -->
+  <path d="M0 0H160V56H0ZM9 9V47H151V9Z" fill="#F2F8FC" fill-rule="evenodd"/>
+  <rect x="2" y="2" width="156" height="52" fill="none" stroke="#1F3A56" stroke-width="0.8"/>
+  <path d="M4.2 4.2H155.8V51.8H4.2ZM7.2 7.2V48.8H152.8V7.2Z" fill="#7BA7CC" fill-rule="evenodd" stroke="#1F3A56" stroke-width="0.45"/>
+  <rect x="9" y="9" width="142" height="38" fill="none" stroke="#34597D" stroke-width="0.55"/>
+  <g id="sk-c">
+    <path d="M4.2 14 C4.2 8.2 8.2 4.2 14 4.2 H10.5 C6.8 4.2 4.2 6.8 4.2 10.5 Z" fill="#A9CDE8" stroke="#1F3A56" stroke-width="0.45"/>
+    <path d="M7.2 7.2 C12.8 7.8 16 10.6 17 15.2 C13.2 14.4 10.2 11.8 7.2 7.2 Z" fill="#A9CDE8" stroke="#1F3A56" stroke-width="0.45"/>
+    <circle cx="15.5" cy="8.5" r="1.15" fill="#34597D"/>
+  </g>
+  <use href="#sk-c" transform="translate(160 0) scale(-1 1)"/>
+  <use href="#sk-c" transform="translate(0 56) scale(1 -1)"/>
+  <use href="#sk-c" transform="translate(160 56) scale(-1 -1)"/>
+</svg>
