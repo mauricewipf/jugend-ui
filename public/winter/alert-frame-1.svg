@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 88">
+  <rect x="2" y="2" width="216" height="84" rx="5" fill="#F2F8FC" stroke="#1F3A56" stroke-width="1.2"/>
+  <rect x="5.5" y="5.5" width="209" height="77" rx="3" fill="none" stroke="#7BA7CC" stroke-width="1.5"/>
+  <!-- Left double-brass vertical spine -->
+  <rect x="5.5" y="5.5" width="5.5" height="77" fill="#7BA7CC" stroke="#1F3A56" stroke-width="0.6"/>
+  <line x1="14" y1="8.5" x2="14" y2="79.5" stroke="#34597D" stroke-width="0.6"/>
+  <rect x="14" y="8.5" width="197.5" height="71" fill="none" stroke="#34597D" stroke-width="0.5"/>
+  <!-- Left corner botanical tendrils -->
+  <g id="alt1-lc">
+    <path d="M11 8.5 C21 9 28 13 31 20 C25.5 19 20.5 15.5 17.5 11.5 C15 14 13.5 17.5 11 21 Z" fill="#A9CDE8" stroke="#1F3A56" stroke-width="0.5"/>
+    <g transform="translate(26.5 11.5) scale(0.62)" stroke="#1F3A56" stroke-linecap="round">
+        <path d="M0 -3.2V3.2M-2.8 -1.6L2.8 1.6M2.8 -1.6L-2.8 1.6" stroke-width="0.55"/>
+        <circle cx="0" cy="0" r="1.1" fill="#F2F8FC" stroke-width="0.4"/>
+        <circle cx="3.3" cy="2.3" r="0.95" fill="#A9CDE8" stroke-width="0.35"/>
+      </g>
+  </g>
+  <use href="#alt1-lc" transform="translate(0 88) scale(1 -1)"/>
+  <!-- Right corner tendrils -->
+  <g id="alt1-rc">
+    <path d="M214.5 20 C213.5 12 208 6.5 200 5.5 C204.5 8.8 207 12.2 207.5 17 C210 15.5 212 17 214.5 20 Z" fill="#A9CDE8" stroke="#1F3A56" stroke-width="0.5"/>
+    <circle cx="211.5" cy="8.5" r="1.5" fill="#34597D"/>
+  </g>
+  <use href="#alt1-rc" transform="translate(0 88) scale(1 -1)"/>
+</svg>

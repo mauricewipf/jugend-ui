@@ -541,7 +541,7 @@ export function writeSeasonalSvg(filename: string, builder: (p: Palette) => stri
   console.log(`✓ Generated ${filename} across ${SEASONS.join(", ")}`)
 }
 
-if (import.meta.main) {
+if (process.argv[1]?.endsWith("build-wave1-svgs.ts")) {
   writeSeasonalSvg("button-frame-v2.svg", buildButtonFrameV2)
   writeSeasonalSvg("card-frame-v2.svg", buildCardFrameV2)
   writeSeasonalSvg("separator-v2.svg", buildSeparatorV2)

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+  <rect x="2" y="2" width="156" height="156" fill="#FFFEF5" stroke="#3F2A04" stroke-width="1.2"/>
+  <path d="M5 5H155V155H5ZM10.5 10.5V149.5H149.5V10.5Z" fill="#FBF0BE" fill-rule="evenodd"/>
+  <rect x="5" y="5" width="150" height="150" fill="none" stroke="#E0A822" stroke-width="1.4"/>
+  <rect x="10.5" y="10.5" width="139" height="139" fill="none" stroke="#8B5F0A" stroke-width="0.55"/>
+  <g id="pop-sal-c">
+    <path d="M10.5 24 C10.5 16.5 16.5 10.5 24 10.5 H10.5 Z" fill="#F7C843" fill-opacity="0.45" stroke="#E0A822" stroke-width="0.5"/>
+    <polygon points="10.5,8 13,10.5 10.5,13 8,10.5" fill="#F7C843" stroke="#3F2A04" stroke-width="0.45"/>
+  </g>
+  <use href="#pop-sal-c" transform="translate(160 0) scale(-1 1)"/>
+  <use href="#pop-sal-c" transform="translate(0 160) scale(1 -1)"/>
+  <use href="#pop-sal-c" transform="translate(160 160) scale(-1 -1)"/>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 200">
+  <rect x="3" y="3" width="214" height="194" rx="8" fill="#FBF3E3" stroke="#473418" stroke-width="1.2"/>
+  <rect x="7" y="7" width="206" height="186" rx="5" fill="none" stroke="#AE8746" stroke-width="2"/>
+  <rect x="12" y="12" width="196" height="176" fill="none" stroke="#684F28" stroke-width="0.6"/>
+  <g id="emp1-tc">
+    <path d="M12 40 C12 22 22 12 40 12 H12 Z" fill="#D6AC54" fill-opacity="0.5" stroke="#AE8746" stroke-width="0.65"/>
+    <path d="M14 14 C25 15 33 21 36 31 C28 29 21 23 14 14 Z" fill="#AE8746" stroke="#473418" stroke-width="0.5"/>
+    <g transform="translate(35 16.5) scale(0.82)">
+        <circle cx="0" cy="0" r="1.8" fill="#7D491A" stroke="#473418" stroke-width="0.35"/>
+        <circle cx="3.2" cy="2.2" r="1.35" fill="#D6AC54" stroke="#473418" stroke-width="0.35"/>
+        <circle cx="-2.4" cy="2.8" r="1.2" fill="#7D491A" stroke="#473418" stroke-width="0.35"/>
+      </g>
+  </g>
+  <use href="#emp1-tc" transform="translate(220 0) scale(-1 1)"/>
+  <use href="#emp1-tc" transform="translate(0 200) scale(1 -1)"/>
+  <use href="#emp1-tc" transform="translate(220 200) scale(-1 -1)"/>
+</svg>

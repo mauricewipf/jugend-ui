@@ -280,7 +280,7 @@ function buildPaginationTileActiveSecession(p: Palette): string {
 </svg>`
 }
 
-if (import.meta.main) {
+if (process.argv[1]?.endsWith("build-wave2-svgs.ts")) {
   writeSeasonalSvg("tabs-trigger-1.svg", buildTabsTrigger1)
   writeSeasonalSvg("tabs-panel-1.svg", buildTabsPanel1)
   writeSeasonalSvg("tabs-tray-salon.svg", buildTabsTraySalon)

@@ -5,7 +5,7 @@ import * as React from "react"
 import { cn } from "@/lib/utils"
 
 const jugendBadgeBase =
-  "relative isolate min-h-7 py-1 overflow-visible rounded-none border-0 bg-transparent before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:border-solid before:[border-image-repeat:stretch]"
+  "relative isolate min-h-7 max-w-full py-1 whitespace-normal text-center leading-snug overflow-visible rounded-none border-0 bg-transparent before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:border-solid before:[border-image-repeat:stretch]"
 
 const badgeVariants = cva(
   "h-5 gap-1.5 rounded-4xl border border-transparent px-2 py-0.5 text-xs font-medium transition-all has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 [&>svg]:size-3! inline-flex items-center justify-center w-fit whitespace-nowrap shrink-0 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive overflow-hidden group/badge",

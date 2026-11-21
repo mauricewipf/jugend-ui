@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240">
+  <rect x="2" y="2" width="196" height="236" fill="#F0F9EC" stroke="#2F441B" stroke-width="1.2"/>
+  <path d="M5.5 5.5H194.5V234.5H5.5ZM9.5 9.5V230.5H190.5V9.5Z" fill="#78AA48" fill-rule="evenodd" stroke="#2F441B" stroke-width="0.55"/>
+  <rect x="13" y="13" width="174" height="214" fill="none" stroke="#4A6B2E" stroke-width="0.55"/>
+  <g id="sht1-c">
+    <path d="M9.5 9.5 C21 10.5 29 16 32.5 26 C34 30.5 32.5 34.2 29 35 C27 35.5 25.5 34 26 32 C28 31 28.8 27.5 27.5 24 C25 17.5 18.5 13.5 9.5 12.5 Z" fill="#A3CF72" stroke="#2F441B" stroke-width="0.55"/>
+    <g transform="translate(29 14) scale(0.72)">
+        <path d="M0 -2.6 C1.8 -1.2 1.8 1.4 0 2.8 C-1.8 1.4 -1.8 -1.2 0 -2.6Z" fill="#A3CF72" stroke="#2F441B" stroke-width="0.4"/>
+        <path d="M2.6 0.2 C4.2 -0.6 4.8 1.2 3.2 2.4 C1.8 2.2 1.6 1 2.6 0.2Z" fill="#78AA48" stroke="#2F441B" stroke-width="0.35"/>
+        <circle cx="-2.2" cy="2.2" r="1.1" fill="#A3CF72" stroke="#2F441B" stroke-width="0.35"/>
+      </g>
+    <circle cx="13" cy="13" r="1.8" fill="#A3CF72" stroke="#2F441B" stroke-width="0.45"/>
+  </g>
+  <use href="#sht1-c" transform="translate(200 0) scale(-1 1)"/>
+  <use href="#sht1-c" transform="translate(0 240) scale(1 -1)"/>
+  <use href="#sht1-c" transform="translate(200 240) scale(-1 -1)"/>
+</svg>
