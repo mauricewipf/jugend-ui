@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 56">
+  <rect x="2" y="2" width="236" height="52" rx="10" fill="#F0DFBE" stroke="#473418" stroke-width="1.15"/>
+  <rect x="5.5" y="5.5" width="229" height="45" rx="7" fill="none" stroke="#AE8746" stroke-width="1.25"/>
+  <g id="ttray-c">
+    <path d="M5.5 15 C5.5 9.5 9.5 5.5 18 5.5 H5.5 Z" fill="#D6AC54" stroke="#473418" stroke-width="0.5"/>
+    <circle cx="9.5" cy="9.5" r="1.5" fill="#FBF3E3" stroke="#473418" stroke-width="0.45"/>
+  </g>
+  <use href="#ttray-c" transform="translate(240 0) scale(-1 1)"/>
+  <use href="#ttray-c" transform="translate(0 56) scale(1 -1)"/>
+  <use href="#ttray-c" transform="translate(240 56) scale(-1 -1)"/>
+</svg>

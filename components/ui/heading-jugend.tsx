@@ -87,8 +87,20 @@ function JugendHeading({
             strokeWidth="0.9"
             vectorEffect="non-scaling-stroke"
           />
-          <circle cx="12" cy="8" r="2" fill={palette.fill} stroke={palette.stroke} strokeWidth="0.7" />
-          <circle cx="208" cy="8" r="2" fill={palette.fill} stroke={palette.stroke} strokeWidth="0.7" />
+          <polygon
+            points="12,5.5 15,8 12,10.5 9,8"
+            fill={palette.fill}
+            stroke={palette.stroke}
+            strokeWidth="0.7"
+            vectorEffect="non-scaling-stroke"
+          />
+          <polygon
+            points="208,5.5 211,8 208,10.5 205,8"
+            fill={palette.fill}
+            stroke={palette.stroke}
+            strokeWidth="0.7"
+            vectorEffect="non-scaling-stroke"
+          />
         </svg>
       </Tag>
     )

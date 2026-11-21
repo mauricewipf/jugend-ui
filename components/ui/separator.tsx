@@ -7,7 +7,7 @@ import * as React from "react"
 import { cn } from "@/lib/utils"
 
 const ruleBase =
-  "relative isolate border-0 bg-transparent data-horizontal:h-6 data-horizontal:w-full data-vertical:w-6 data-vertical:min-h-16 data-vertical:h-full before:pointer-events-none before:absolute before:inset-0 before:border-solid data-horizontal:before:border-y-0 data-horizontal:before:border-x-[44px] sm:data-horizontal:before:border-x-[56px] data-vertical:before:border-x-0 data-vertical:before:border-y-[24px] before:[border-image-repeat:stretch] data-horizontal:before:[border-image-slice:0_calc(56/300*100%)_0_calc(56/300*100%)_fill]"
+  "relative isolate border-0 bg-transparent data-horizontal:h-6 data-horizontal:w-full data-vertical:w-0.5 data-vertical:min-h-12 data-vertical:h-full data-vertical:bg-current/55 data-horizontal:before:pointer-events-none data-horizontal:before:absolute data-horizontal:before:inset-0 data-horizontal:before:border-solid data-horizontal:before:border-y-0 data-horizontal:before:border-x-[44px] sm:data-horizontal:before:border-x-[56px] data-horizontal:before:[border-image-repeat:stretch] data-horizontal:before:[border-image-slice:0_calc(56/300*100%)_0_calc(56/300*100%)_fill]"
 
 const separatorVariants = cva(
   "shrink-0 data-horizontal:w-full data-vertical:self-stretch",
